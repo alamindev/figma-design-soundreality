@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch": "tailwindcss -i src/css/tailwind.css -o src/css/style.css --watch",
+    "production": "tailwindcss -i src/css/tailwind.css -o src/css/style.css --minify",
+    "format": "prettier src/index.html --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.7",
+    "tailwindcss": "^3.0.19"
+  }
+}
