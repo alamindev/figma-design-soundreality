@@ -18,6 +18,7 @@ module.exports = {
         'brand-gray-100': '#F8F7FA',
         'brand-gray-light-100': '#F9F9F9',
         'brand-gray-light-200': '#DDDDDD',
+        'brand-gray-light-800': '#F8F8F8',
         'brand-gray-light-900': '#999999',
       },
       boxShadow: {

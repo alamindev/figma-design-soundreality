@@ -53,6 +53,9 @@
    .slick--tag .slick-slide:last-child {
     @apply border-r-0
    }
+   .dark .slick-slide{
+    @apply !border-r-0
+   }
   .slick--tag .slick-slide:first-child a{
     @apply !pl-0
   }
