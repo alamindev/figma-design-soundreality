@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice dashboard</title>
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-brand-gray text-brand-dark-blue">
+    <div class="relative mx-auto h-full w-[430px] max-w-full">
+      <!-- start coding for header -->
+      <header>
+        <div
+          class="top-0 w-full border-b border-brand-gray-50 bg-white py-4 px-4"
+        >
+          <h2 class="py-2 text-center text-lg text-black">Shopping Bag</h2>
+        </div>
+        <!--end search bar-->
+      </header>
+      <main class="max-h-[calc(100vh-168px)] overflow-y-auto px-4">
+        <div class="flex flex-col items-center justify-center gap-4 pt-8">
+          <img src="./images/cart.svg" alt="cart" />
+          <p class="text-center text-brand-dark-blue">
+            Your shopping bag is empty
+          </p>
+          <a
+            href="#"
+            class="bg-brand-dark-blue px-10 py-3 capitalize leading-[1] text-white"
+            >Start Shopping</a
+          >
+        </div>
+        <div class="grid grid-cols-2 gap-3 pt-20 pb-5">
+          <div class="w-295 max-w-full overflow-hidden bg-white pt-3">
+            <div class="relative flex h-40 items-end justify-center">
+              <img
+                class="w-auto"
+                src="./images/product/product-4.png"
+                alt="product-5.png"
+              />
+              <button
+                type="button"
+                class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+              >
+                <svg
+                  class="fill-brand-dark-blue"
+                  width="30"
+                  height="26"
+                  viewBox="0 0 30 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="pl-2 pr-2">
+              <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+              <a href="#"
+                ><h2
+                  class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                >
+                  Aroub Perfume Toby Rose - Eau de Perfume
+                </h2></a
+              >
+            </div>
+            <div
+              class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+            >
+              <div class="pl-2 md:pl-4">
+                <div class="flex flex-col">
+                  <p class="font-medium text-brand-pink">SAR 111.69</p>
+                  <p class="text-sm text-brand-gray-light-900 line-through">
+                    SAR 111.69
+                  </p>
+                </div>
+              </div>
+              <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                <span>-75%</span>
+              </div>
+            </div>
+            <div class="">
+              <button
+                type="button"
+                class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="w-295 max-w-full overflow-hidden bg-white pt-3">
+            <div class="relative flex h-40 items-end justify-center">
+              <img
+                class="w-auto"
+                src="./images/product/product-16.png"
+                alt="product-5.png"
+              />
+              <button
+                type="button"
+                class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+              >
+                <svg
+                  class="fill-brand-dark-blue"
+                  width="30"
+                  height="26"
+                  viewBox="0 0 30 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="pl-2 pr-2">
+              <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+              <a href="#"
+                ><h2
+                  class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                >
+                  Aroub Perfume Toby Rose - Eau de Perfume
+                </h2></a
+              >
+            </div>
+            <div
+              class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+            >
+              <div class="pl-2 md:pl-4">
+                <div class="flex flex-col">
+                  <p class="font-medium text-brand-pink">SAR 111.69</p>
+                  <p class="text-sm text-brand-gray-light-900 line-through">
+                    SAR 111.69
+                  </p>
+                </div>
+              </div>
+              <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                <span>-75%</span>
+              </div>
+            </div>
+            <div class="">
+              <button
+                type="button"
+                class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="w-295 max-w-full overflow-hidden bg-white pt-3">
+            <div class="relative flex h-40 items-end justify-center">
+              <img
+                class="w-auto"
+                src="./images/product/product-17.png"
+                alt="product-5.png"
+              />
+              <button
+                type="button"
+                class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+              >
+                <svg
+                  class="fill-brand-dark-blue"
+                  width="30"
+                  height="26"
+                  viewBox="0 0 30 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="pl-2 pr-2">
+              <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+              <a href="#"
+                ><h2
+                  class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                >
+                  Aroub Perfume Toby Rose - Eau de Perfume
+                </h2></a
+              >
+            </div>
+            <div
+              class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+            >
+              <div class="pl-2 md:pl-4">
+                <div class="flex flex-col">
+                  <p class="font-medium text-brand-pink">SAR 111.69</p>
+                  <p class="text-sm text-brand-gray-light-900 line-through">
+                    SAR 111.69
+                  </p>
+                </div>
+              </div>
+              <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                <span>-75%</span>
+              </div>
+            </div>
+            <div class="">
+              <button
+                type="button"
+                class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="w-295 max-w-full overflow-hidden bg-white pt-3">
+            <div class="relative flex h-40 items-end justify-center">
+              <img
+                class="w-auto"
+                src="./images/product/product-18.png"
+                alt="product-5.png"
+              />
+              <button
+                type="button"
+                class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+              >
+                <svg
+                  class="fill-brand-dark-blue"
+                  width="30"
+                  height="26"
+                  viewBox="0 0 30 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="pl-2 pr-2">
+              <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+              <a href="#"
+                ><h2
+                  class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                >
+                  Aroub Perfume Toby Rose - Eau de Perfume
+                </h2></a
+              >
+            </div>
+            <div
+              class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+            >
+              <div class="pl-2 md:pl-4">
+                <div class="flex flex-col">
+                  <p class="font-medium text-brand-pink">SAR 111.69</p>
+                  <p class="text-sm text-brand-gray-light-900 line-through">
+                    SAR 111.69
+                  </p>
+                </div>
+              </div>
+              <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                <span>-75%</span>
+              </div>
+            </div>
+            <div class="">
+              <button
+                type="button"
+                class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+              >
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div
+        class="bottom-0 left-0 right-0 z-50 mx-auto w-[430px] max-w-full border-t bg-white py-3 px-5"
+      >
+        <div class="flex items-center justify-between gap-3">
+          <a
+            href="homepage-c.html"
+            class="group flex flex-col items-center justify-center"
+          >
+            <svg
+              class="fill-brand-dark-blue group-hover:fill-brand-pink group-child-odd:fill-brand-pink group-child-even:fill-brand-pink"
+              width="26"
+              height="25"
+              viewBox="0 0 26 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.675 0.568848L25.6 11.4438L24.2687 12.7751L22.375 11.0576V23.2938L21.4375 24.2313H15.8125L14.875 23.2938V16.7313H11.125V23.2938L10.1875 24.2313H4.56245L3.62495 23.2938V11.0726L1.74995 12.7751L0.418701 11.4438L12.325 0.568848H13.675ZM5.49995 9.36822V22.3563H9.24995V15.7938L10.1875 14.8563H15.8125L16.75 15.7938V22.3563H20.5V9.35697L13 2.55635L5.49995 9.36822Z"
+              />
+            </svg>
+            <p
+              class="pt-1.5 text-sm text-brand-dark-blue group-child-odd:text-brand-pink md:text-base"
+            >
+              Home
+            </p>
+          </a>
+          <a
+            href="category-menu.html"
+            class="group flex flex-col items-center justify-center"
+          >
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              class="stroke-brand-dark-blue"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                class="fill-brand-gray-light-900 stroke-brand-gray-light-900 group-hover:fill-brand-pink group-hover:stroke-brand-pink group-child-even:fill-brand-pink group-child-even:stroke-brand-pink"
+                x="0.75"
+                y="1.25"
+                width="8.5"
+                height="8.5"
+                rx="4.25"
+                stroke-width="1.5"
+              />
+              <rect
+                class="stroke-brand-dark-blue group-hover:stroke-brand-pink group-child-even:stroke-brand-pink"
+                x="0.75"
+                y="15.25"
+                width="8.5"
+                height="8.5"
+                rx="4.25"
+                stroke-width="1.5"
+              />
+              <rect
+                class="stroke-brand-dark-blue group-hover:stroke-brand-pink group-child-even:stroke-brand-pink"
+                x="14.7498"
+                y="1.25"
+                width="8.5"
+                height="8.5"
+                rx="4.25"
+                stroke-width="1.5"
+              />
+              <rect
+                class="stroke-brand-dark-blue group-hover:stroke-brand-pink group-child-even:stroke-brand-pink"
+                x="14.7498"
+                y="15.25"
+                width="8.5"
+                height="8.5"
+                rx="4.25"
+                stroke-width="1.5"
+              />
+            </svg>
+            <p
+              class="pt-1.5 text-sm text-brand-dark-blue group-child-even:text-brand-pink md:text-base"
+            >
+              Categories
+            </p>
+          </a>
+          <a
+            href="cart-menu.html"
+            class="group-child group flex flex-col items-center justify-center"
+          >
+            <svg
+              class="fill-brand-dark-blue group-hover:fill-brand-pink group-child-odd:fill-brand-pink"
+              width="23"
+              height="26"
+              viewBox="0 0 23 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9444 8.31408V6.01964C16.9444 5.30467 16.8036 4.59669 16.53 3.93614C16.2564 3.27559 15.8553 2.6754 15.3498 2.16984C14.8442 1.66427 14.244 1.26324 13.5835 0.989629C12.9229 0.71602 12.2149 0.575195 11.5 0.575195C10.785 0.575195 10.077 0.71602 9.41647 0.989629C8.75592 1.26324 8.15573 1.66427 7.65017 2.16984C7.14461 2.6754 6.74357 3.27559 6.46996 3.93614C6.19635 4.59669 6.05553 5.30467 6.05553 6.01964V11.4641C6.05553 11.6704 6.13747 11.8682 6.28333 12.0141C6.4292 12.1599 6.62703 12.2419 6.83331 12.2419C7.03959 12.2419 7.23742 12.1599 7.38328 12.0141C7.52914 11.8682 7.61108 11.6704 7.61108 11.4641V9.86964H13.8333V8.31408H7.61108V6.01964C7.61108 4.98824 8.02081 3.99909 8.75011 3.26978C9.47942 2.54047 10.4686 2.13075 11.5 2.13075C12.5314 2.13075 13.5205 2.54047 14.2498 3.26978C14.9791 3.99909 15.3889 4.98824 15.3889 6.01964V11.4252C15.3889 11.6315 15.4708 11.8293 15.6167 11.9752C15.7625 12.121 15.9604 12.203 16.1666 12.203C16.3729 12.203 16.5708 12.121 16.7166 11.9752C16.8625 11.8293 16.9444 11.6315 16.9444 11.4252V9.86964H20.8333V23.8696H2.16664V9.86964H4.49997V8.31408H0.611084V23.9396C0.611084 24.3336 0.767597 24.7115 1.04619 24.9901C1.32479 25.2687 1.70265 25.4252 2.09664 25.4252H20.9033C21.2973 25.4252 21.6752 25.2687 21.9538 24.9901C22.2323 24.7115 22.3889 24.3336 22.3889 23.9396V8.31408H16.9444Z"
+              />
+              <rect
+                x="14"
+                y="19.5"
+                width="5"
+                height="2"
+                transform="rotate(-180 14 19.5)"
+              />
+            </svg>
+            <p
+              class="pt-1.5 text-sm text-brand-dark-blue group-child-odd:text-brand-pink md:text-base"
+            >
+              Cart
+            </p>
+          </a>
+          <a
+            href="offer.html"
+            class="group flex flex-col items-center justify-center"
+          >
+            <svg
+              class="fill-brand-dark-blue group-hover:fill-brand-pink group-child-even:fill-brand-pink"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.9 9.09981C19.2713 9.09981 19.6274 8.95231 19.8899 8.68975C20.1525 8.4272 20.3 8.07111 20.3 7.69981C20.3 7.3285 20.1525 6.97241 19.8899 6.70986C19.6274 6.4473 19.2713 6.2998 18.9 6.2998C18.5287 6.2998 18.1726 6.4473 17.91 6.70986C17.6475 6.97241 17.5 7.3285 17.5 7.69981C17.5 8.07111 17.6475 8.4272 17.91 8.68975C18.1726 8.95231 18.5287 9.09981 18.9 9.09981V9.09981ZM12.8898 3.6202C13.4148 3.09507 14.1268 2.79996 14.8694 2.7998H21.1022C21.8448 2.7998 22.557 3.0948 23.0821 3.61991C23.6072 4.14501 23.9022 4.8572 23.9022 5.5998V11.7234C23.9023 12.0936 23.829 12.4602 23.6865 12.802C23.544 13.1437 23.3351 13.4537 23.072 13.7142L14.9268 21.7782C14.4007 22.2982 13.6902 22.5889 12.9505 22.5868C12.2108 22.5847 11.5019 22.29 10.9788 21.767L4.83979 15.6294C4.31487 15.1043 4.01999 14.3923 4.01999 13.6498C4.01999 12.9073 4.31487 12.1953 4.83979 11.6702L12.8898 3.6202V3.6202ZM14.8694 4.1998C14.4981 4.19988 14.1421 4.34744 13.8796 4.61L5.82959 12.66C5.56713 12.9225 5.41969 13.2786 5.41969 13.6498C5.41969 14.021 5.56713 14.3771 5.82959 14.6396L11.9672 20.7772C12.2288 21.0387 12.5832 21.1861 12.953 21.1871C13.3229 21.1882 13.6781 21.0428 13.9412 20.7828L22.0878 12.7188C22.2191 12.5887 22.3233 12.4338 22.3944 12.2632C22.4655 12.0926 22.5022 11.9096 22.5022 11.7248V5.5998C22.5022 5.2285 22.3547 4.87241 22.0921 4.60986C21.8296 4.3473 21.4735 4.1998 21.1022 4.1998H14.8694ZM4.19579 16.5198C4.00801 17.0229 3.96888 17.5695 4.08307 18.0942C4.19725 18.619 4.45993 19.0998 4.83979 19.4794L9.00759 23.6472C10.0543 24.6937 11.4728 25.2832 12.9529 25.2868C14.4331 25.2905 15.8545 24.7081 16.9064 23.6668L23.072 17.5628C23.3348 17.3027 23.5435 16.9931 23.6859 16.6518C23.8284 16.3106 23.9019 15.9446 23.9022 15.5748V14.7726L16.9064 21.7068C16.8394 21.7738 16.7708 21.8392 16.7006 21.9028L15.9222 22.6728C15.1333 23.4541 14.0672 23.8912 12.9569 23.8885C11.8466 23.8859 10.7826 23.4438 9.99739 22.6588L9.29879 21.9588C9.19857 21.8717 9.10145 21.7811 9.00759 21.6872L4.83979 17.5194C4.55576 17.2364 4.3361 16.8954 4.19579 16.5198V16.5198Z"
+              />
+              <rect
+                x="13.5454"
+                y="9.69141"
+                width="4.32793"
+                height="4.32793"
+                rx="2.16397"
+                transform="rotate(42.9357 13.5454 9.69141)"
+              />
+            </svg>
+            <p
+              class="pt-1.5 text-sm text-brand-dark-blue group-child-odd:text-brand-pink md:text-base"
+            >
+              Offers
+            </p>
+          </a>
+          <a href="#" class="group flex flex-col items-center justify-center">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="stroke-brand-dark-blue group-hover:stroke-brand-pink group-child-odd:stroke-brand-pink"
+                d="M6.66669 26.6663V25.333C6.66669 22.8577 7.65002 20.4837 9.40036 18.7333C11.1507 16.983 13.5247 15.9997 16 15.9997V15.9997C18.4754 15.9997 20.8493 16.983 22.5997 18.7333C24.35 20.4837 25.3334 22.8577 25.3334 25.333V26.6663H6.66669ZM16 15.9997C17.4145 15.9997 18.7711 15.4378 19.7713 14.4376C20.7715 13.4374 21.3334 12.0808 21.3334 10.6663C21.3334 9.25185 20.7715 7.8953 19.7713 6.8951C18.7711 5.89491 17.4145 5.33301 16 5.33301C14.5855 5.33301 13.229 5.89491 12.2288 6.8951C11.2286 7.8953 10.6667 9.25185 10.6667 10.6663C10.6667 12.0808 11.2286 13.4374 12.2288 14.4376C13.229 15.4378 14.5855 15.9997 16 15.9997V15.9997Z"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="fill-brand-gray-light-900 group-hover:fill-brand-pink group-child-odd:fill-brand-pink"
+                d="M13 23C13 21.3431 14.3431 20 16 20C17.6569 20 19 21.3431 19 23V26H13V23Z"
+              />
+            </svg>
+            <p
+              class="pt-1.5 text-sm text-brand-dark-blue group-child-odd:text-brand-pink md:text-base"
+            >
+              Account
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

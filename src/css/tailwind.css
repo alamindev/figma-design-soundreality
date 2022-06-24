@@ -8,8 +8,8 @@
   html, body{
     @apply font-dm
   }
-  button, input{
-    @apply focus:outline-none right-0 border-0 bg-transparent
+  button, input, textarea, select{
+    @apply focus:outline-none focus:ring-0 focus:border-inherit  bg-transparent
   }
   [type="radio"]:checked,
   [type="radio"]:not(:checked) {
@@ -38,6 +38,9 @@
   }
 }
 @layer utilities{
+  .cutsom-checkbox-row  input[type="checkbox"]:checked + label span { 
+  @apply !text-brand-dark-blue
+  }
   .top-arrow{
     @apply after:absolute after:top-0 after:left-10 after:-ml-[15px] after:-mt-[14px] after:w-0 after:z-10 after:h-0 after:border-b-[15px] after:border-white after:border-l-[15px] after:border-l-transparent after:border-r-[15px] after:border-r-transparent
   }
@@ -92,4 +95,33 @@
            margin-left:  -10px;
     }
   }
+
+  .sidebar-active{
+    @apply relative bg-brand-gray-light-100 before:absolute before:right-0 before:top-0 before:h-full before:w-0.5 before:bg-brand-pink
+  }
+
+
+  .open > h2{
+    @apply text-brand-dark-blue
+  }
+  .open .accordion-icon svg{
+    @apply rotate-180 fill-brand-dark-blue
+  }
+  .active > div{
+    @apply bg-brand-pink border-brand-pink
+  }
+  .tab-active p{
+    @apply text-brand-dark-blue
+  }
+  .tab-active svg{
+    @apply fill-brand-dark-blue
+  }
+  .account-info.active-menu svg:last-child {
+    @apply rotate-180 
+  }
 }
+ 
+ 
+ 
+
+  

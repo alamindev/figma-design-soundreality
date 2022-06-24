@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "tailwindcss -i src/css/tailwind.css -o src/css/style.css --watch",
     "production": "tailwindcss -i src/css/tailwind.css -o src/css/style.css --minify",
-    "format": "prettier src/index.html --write"
+    "format": "prettier src/* --write"
   },
   "keywords": [],
   "author": "",
