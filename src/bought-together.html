@@ -1023,7 +1023,7 @@
                     </p>
                   </div>
                   <div
-                    class="max-h-[47vh] divide-y divide-brand-gray-light-200 overflow-y-auto bg-white px-4 pb-3"
+                    class="max-h-[47vh] divide-y divide-brand-gray-50 overflow-y-auto bg-white px-4 pb-3"
                   >
                     <div class="flex items-start gap-6 py-4">
                       <div
@@ -2130,1105 +2130,1795 @@
       </form>
     </div>
     <!--end mobile search bar-->
-    <!-- start coding for main section  -->
     <div class="relative">
       <main
-        class="main-overlay duration-200 after:invisible after:absolute after:inset-0 after:right-0 after:h-full after:w-full after:bg-brand-dark-blue after:bg-opacity-40 after:opacity-0 after:transition-all"
+        class="main-overlay duration-200 after:invisible after:absolute after:inset-0 after:h-full after:w-full after:bg-brand-dark-blue after:bg-opacity-40 after:opacity-0 after:transition-all"
       >
-        <!-- start coding for top tag area -->
-        <seaction
-          class="relative flex bg-brand-dark-blue py-5 pl-4 md:px-4 xl:px-0"
-        >
+        <!-- start coding for breadcrumbs   -->
+        <section class="hidden bg-white py-8 lg:block">
           <div class="container mx-auto">
-            <div class="slick--tag dark">
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >New</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Brands</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Skin</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Make Up</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Body</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Hair</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Fragrance</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Tools & Brushes</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Bath & Body</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Mom & Baby</a
-              >
-              <a
-                href="#"
-                class="inline-block px-[25px] text-center leading-[1] text-white"
-                >Sales & Offers</a
-              >
-            </div>
-          </div>
-        </seaction>
-        <!--end top tag area-->
-        <!-- start coding for nav bullet area -->
-        <section class="bg-white py-10 px-4">
-          <div class="container mx-auto">
-            <div class="flex justify-center">
-              <div class="w-[733px] max-w-full">
-                <ul class="flex">
-                  <li
-                    class="nav-step relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
-                  >
-                    <div
-                      class="marker: h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
-                    ></div>
-                    <p
-                      class="flex-shrink-0 text-center text-xs text-brand-dark-blue md:text-base lg:text-lg"
-                    >
-                      Information
-                    </p>
-                  </li>
-                  <li
-                    class="nav-step relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
-                  >
-                    <div
-                      class="h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
-                    ></div>
-                    <p
-                      class="flex-shrink-0 text-center text-xs text-brand-dark-blue md:text-base lg:text-lg"
-                    >
-                      Shipping
-                    </p>
-                  </li>
-                  <li
-                    class="nav-step group relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
-                  >
-                    <div
-                      class="h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
-                    ></div>
-                    <p
-                      class="flex-shrink-0 text-center text-xs text-brand-dark-blue md:text-base lg:text-lg"
-                    >
-                      Payment
-                    </p>
-                  </li>
-                  <li
-                    class="nav-step group relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
-                  >
-                    <div
-                      class="h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
-                    ></div>
-                    <p
-                      class="flex-shrink-0 text-center text-xs text-brand-dark-blue md:text-base lg:text-lg"
-                    >
-                      Thank You
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <ul class="flex gap-2">
+              <li class="text-sm text-brand-gray-light-900">
+                <a href="#" class="text-black">Home <span>&nbsp;/</span></a>
+              </li>
+              <li class="text-sm text-brand-gray-light-900">
+                <a href="#" class="text-black"
+                  >Fragrance <span>&nbsp;/</span></a
+                >
+              </li>
+              <li class="text-sm text-brand-gray-light-900">
+                Valentino Donna For Women - Eau de Parfum
+              </li>
+            </ul>
           </div>
         </section>
-        <!-- start coding for checkout main section  -->
-        <section class="py-10 md:py-14 lg:py-16">
+        <!--end breadcrumb-->
+        <!-- start coding for product area -->
+        <section class="bg-white px-4 pb-10 pt-5 md:pb-14 xl:pb-20">
           <div class="container mx-auto">
-            <div
-              class="flex flex-col-reverse items-start justify-between gap-10 lg:flex-row"
-            >
-              <div
-                class="w-full max-w-full px-4 lg:w-[610px] lg:px-0 xl:flex-shrink-0"
-              >
-                <form action="">
-                  <div class="step-1 step">
-                    <div class="pb-8">
-                      <h1 class="pb-2 text-[22px] text-brand-dark-blue">
-                        Information
-                      </h1>
-                      <p class="text-sm text-brand-dark-blue">
-                        Already have an account with us?
-                        <a href="#" class="font-bold underline">Log in</a> for a
-                        faster checkout experience.
-                      </p>
-                      <div class="w-full pt-8">
-                        <input
-                          type="text"
-                          name="email"
-                          placeholder="Email Address"
-                          class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                        />
-                      </div>
-                    </div>
-                    <div class="">
-                      <h2 class="pb-8 text-[22px] text-brand-dark-blue">
-                        Shipping Address
-                      </h2>
-                      <div class="mb-7 w-full bg-white p-3">
-                        <figure>
-                          <img
-                            src="./images/map.png"
-                            class="w-full"
-                            alt="map"
-                          />
-                        </figure>
-                      </div>
-                      <p class="mb-7 text-sm text-brand-dark-blue">
-                        Click the "Detect Current Location" button then move the
-                        red marker to your desired shipping address.
-                      </p>
-                      <div class="w-full">
-                        <button
-                          type="button"
-                          class="w-full bg-brand-pink py-3 px-5 text-base font-medium text-white"
-                        >
-                          Detect current location
-                        </button>
-                      </div>
-                    </div>
-                    <div class="grid grid-cols-12 gap-x-6 gap-y-4 py-10">
-                      <div class="col-span-12 md:col-span-6">
-                        <input
-                          type="text"
-                          name="first_name"
-                          placeholder="First Name"
-                          class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                        />
-                      </div>
-                      <div class="col-span-12 md:col-span-6">
-                        <input
-                          type="text"
-                          name="last_name"
-                          placeholder="Last Name"
-                          class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                        />
-                      </div>
-                      <div class="relative col-span-12">
+            <div class="flex flex-col items-start gap-10 lg:flex-row xl:gap-32">
+              <div class="hidden w-full gap-8 lg:flex xl:gap-24">
+                <div class="">
+                  <figure>
+                    <img
+                      class="w-full"
+                      src="./images/product/product-24.png"
+                      alt="product-22.png"
+                    />
+                  </figure>
+                </div>
+                <div class="flex-shrink-0">
+                  <ul class="flex flex-col items-center justify-center gap-3">
+                    <li>
+                      <img
+                        class="h-[88px] w-[85px] object-cover"
+                        src="./images/product/product-22.png"
+                        alt="product-22.png"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="h-[88px] w-[85px] object-cover"
+                        src="./images/single-product/thumbnail-4.png"
+                        alt="product-15"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        class="h-[88px] w-[85px] object-cover"
+                        src="./images/single-product/thumbnail-3.png"
+                        alt="thumbnail-3.png"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="single-product-slider w-full lg:hidden">
+                <div
+                  class="!flex w-full items-center justify-center bg-brand-gray py-10 px-5"
+                >
+                  <figure>
+                    <img
+                      src="./images/product/product-24.png"
+                      alt="product 4"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="!flex w-full items-center justify-center bg-brand-gray py-10 px-5"
+                >
+                  <figure>
+                    <img
+                      src="./images/product/product-24.png"
+                      alt="product 4"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="!flex w-full items-center justify-center bg-brand-gray py-10 px-5"
+                >
+                  <figure>
+                    <img
+                      src="./images/product/product-24.png"
+                      alt="product 4"
+                    />
+                  </figure>
+                </div>
+                <div
+                  class="!flex w-full items-center justify-center bg-brand-gray py-10 px-5"
+                >
+                  <figure>
+                    <img
+                      src="./images/product/product-24.png"
+                      alt="product 4"
+                    />
+                  </figure>
+                </div>
+              </div>
+              <div class="w-[510px] max-w-full flex-shrink-0">
+                <figure>
+                  <img
+                    src="./images/single-product/product-logo-bio.png"
+                    alt="product-logo-bio.png"
+                  />
+                </figure>
+                <div class="w-full border-b border-brand-gray-50 py-5">
+                  <p class="text-sm text-brand-gray-light-900">
+                    Click here for more of
+                    <a href="#" class="text-black underline"> Bio Oil</a>
+                  </p>
+                </div>
+                <div class="py-4">
+                  <h1 class="pb-2 text-[32px] text-brand-dark-blue">
+                    Bio-Oil Skincare Oil 60ml
+                  </h1>
+                  <div class="flex items-center gap-2">
+                    <p class="text-brand-pink">4.5</p>
+                    <ul class="flex items-center gap-1">
+                      <li>
                         <img
-                          class="absolute left-6 top-3.5"
-                          src="./images/location-icon.svg"
-                          alt="location-icon.svg"
+                          src="./images/single-product/star.svg"
+                          alt="star.svg"
                         />
-                        <input
-                          type="text"
-                          name="last_name"
-                          placeholder="Street Address"
-                          class="w-full border border-brand-gray-light-200 py-3 pl-14 pr-5 text-brand-dark placeholder:text-brand-gray-light-900"
+                      </li>
+                      <li>
+                        <img
+                          src="./images/single-product/star.svg"
+                          alt="star.svg"
                         />
-                      </div>
-                      <div class="col-span-12 md:col-span-4">
-                        <select
-                          name="region"
-                          class="border-1 w-full appearance-none border-brand-gray-light-200 bg-white bg-[url(../images/arrow-down-light.svg)] bg-[length:14px_50px] bg-[right_0.8rem_center] bg-no-repeat py-3.5 px-5 text-brand-gray-light-900"
-                          id=""
-                        >
-                          <option disabled selected>Country / Region</option>
-                          <option value="recent">Country</option>
-                          <option value="recent">Region</option>
-                        </select>
-                      </div>
-                      <div class="col-span-12 md:col-span-4">
-                        <select
-                          name="region"
-                          class="border-1 w-full appearance-none border-brand-gray-light-200 bg-white bg-[url(../images/arrow-down-light.svg)] bg-[length:14px_50px] bg-[right_0.8rem_center] bg-no-repeat py-3.5 px-5 text-brand-gray-light-900"
-                          id=""
-                        >
-                          <option disabled selected>Postcode / Zip</option>
-                          <option value="recent">2000</option>
-                          <option value="recent">3000</option>
-                        </select>
-                      </div>
-                      <div class="col-span-12 md:col-span-4">
-                        <select
-                          name="region"
-                          class="border-1 w-full appearance-none border-brand-gray-light-200 bg-white bg-[url(../images/arrow-down-light.svg)] bg-[length:14px_50px] bg-[right_0.8rem_center] bg-no-repeat py-3.5 px-5 text-brand-gray-light-900"
-                          id=""
-                        >
-                          <option disabled selected>State / Country</option>
-                          <option value="recent">Country</option>
-                          <option value="recent">state</option>
-                        </select>
-                      </div>
-                      <div class="col-span-12">
-                        <input
-                          type="text"
-                          name="twon"
-                          placeholder="Town / City"
-                          class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
+                      </li>
+                      <li>
+                        <img
+                          src="./images/single-product/star.svg"
+                          alt="star.svg"
                         />
-                      </div>
-                      <div class="col-span-12 md:col-span-6">
-                        <input
-                          type="tel"
-                          placeholder="+966"
-                          id="telephone"
-                          class="focus:ouline-none border-1 left-0 w-full border-brand-gray-light-200 py-3.5 placeholder:text-brand-gray-light-900 focus:border-brand-gray-light-200 focus:ring-0"
+                      </li>
+                      <li>
+                        <img
+                          src="./images/single-product/star.svg"
+                          alt="star.svg"
                         />
+                      </li>
+                      <li>
+                        <img
+                          src="./images/single-product/star-helf.svg"
+                          alt="star-helf.svg"
+                        />
+                      </li>
+                    </ul>
+                    <a href="#" class="text-brand-gray-light-900 underline"
+                      >2 Reviews</a
+                    >
+                  </div>
+                </div>
+                <fieldset class="mt-3 mb-3">
+                  <legend class="text-sm text-brand-gray-light-900">
+                    Size: <span class="option-value text-brand-pink"></span>
+                  </legend>
+                  <div class="mt-2 flex items-center gap-4">
+                    <label for="100ml">
+                      <input
+                        id="100ml"
+                        type="radio"
+                        name="project-type"
+                        value="100ml"
+                        class="select-input peer hidden"
+                      />
+                      <div
+                        class="relative flex w-[85px] cursor-pointer overflow-hidden border bg-white p-2 text-brand-gray-light-900 focus:outline-none peer-checked:border-brand-pink peer-checked:text-brand-dark-blue"
+                      >
+                        <div class="flex flex-1 flex-col gap-1.5">
+                          <p
+                            class="select-none text-center text-xs"
+                            data-value="100ml"
+                          >
+                            100ml
+                          </p>
+                          <p class="select-none text-center text-sm">
+                            SAR 111.69
+                          </p>
+                        </div>
+                      </div>
+                    </label>
+                    <label for="50ml">
+                      <input
+                        id="50ml"
+                        type="radio"
+                        name="project-type"
+                        value="50ml"
+                        class="select-input peer hidden"
+                      />
+                      <div
+                        class="relative flex w-[85px] cursor-pointer overflow-hidden border bg-white p-2 text-brand-gray-light-900 focus:outline-none peer-checked:border-brand-pink peer-checked:text-brand-dark-blue"
+                      >
+                        <div class="flex flex-1 flex-col gap-1.5">
+                          <p class="select-none text-center text-xs">50ml</p>
+                          <p class="select-none text-center text-sm">
+                            SAR 111.69
+                          </p>
+                        </div>
+                      </div>
+                    </label>
+                    <label for="40ml">
+                      <input
+                        id="40ml"
+                        type="radio"
+                        name="project-type"
+                        value="40ml"
+                        class="select-input peer hidden"
+                      />
+                      <div
+                        class="peer-checked:group relative flex w-[85px] cursor-pointer overflow-hidden border bg-white p-2 text-brand-gray-light-900 focus:outline-none peer-checked:border-brand-pink peer-checked:text-brand-dark-blue"
+                      >
+                        <div class="flex flex-1 flex-col gap-1.5">
+                          <p class="select-none text-center text-xs">40ml</p>
+                          <p class="select-none text-center text-sm">
+                            SAR 111.69
+                          </p>
+                        </div>
+                        <div
+                          class="absolute left-[-22px] top-[30px] w-[130px] rotate-[34deg] border-t border-inherit"
+                        ></div>
+                      </div>
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="hidden lg:block">
+                  <div class="empty-stock">
+                    <div
+                      class="flex w-[278px] max-w-full items-start justify-between gap-5 pt-5 pb-5"
+                    >
+                      <div class="4">
+                        <div class="flex items-center gap-3">
+                          <p class="text-2xl text-brand-dark-blue">
+                            SAR 111.69
+                          </p>
+                          <p
+                            class="text-base text-brand-gray-light-900 line-through"
+                          >
+                            SAR 276
+                          </p>
+                        </div>
+                        <p class="text-sm text-brand-gray-light-900">
+                          Including VAT
+                        </p>
+                      </div>
+                      <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                        <span>-75%</span>
                       </div>
                     </div>
-                    <div
-                      class="button__area fixed left-0 bottom-0 z-40 flex w-full items-center justify-between border-t border-brand-gray-50 bg-white px-5 pt-2 pb-2 lg:static lg:border-t-0 lg:bg-transparent lg:px-0"
-                    >
-                      <a
-                        href="#"
-                        class="inline-block w-[190px] border border-brand-gray-light-900 py-3 px-4 text-center text-brand-gray-light-900"
-                        >Return to Cart</a
-                      >
+                    <div class="flex w-[320px] max-w-full items-center gap-5">
                       <button
                         type="button"
-                        data-id="next"
-                        class="inline-block w-[190px] bg-brand-dark-blue px-5 py-3 text-center text-white"
+                        class="select-option-btn w-full border-none bg-brand-gray-light-900 py-2.5 text-base text-white focus:outline-none focus:ring-0"
                       >
-                        Continue Shopping
+                        Select an option
+                      </button>
+                      <div class="add-to-cart hidden w-full">
+                        <div class="flex w-full gap-4">
+                          <input
+                            type="text"
+                            value="1"
+                            placeholder="1"
+                            class="w-[50px] border border-brand-gray-50 py-3.5 text-center focus:ring-0"
+                          />
+                          <button
+                            type="button"
+                            class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="inline-block flex-shrink-0 border-none bg-transparent focus:outline-none focus:ring-0"
+                      >
+                        <svg
+                          width="30"
+                          height="26"
+                          viewBox="0 0 30 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                            fill="#353653"
+                          />
+                        </svg>
                       </button>
                     </div>
                   </div>
-                  <div class="step-2 step">
-                    <div class="pb-10">
-                      <ul class="border border-brand-gray-50 bg-white">
-                        <li
-                          class="flex items-start gap-2 border-b border-brand-gray-50 py-2 px-4 last:border-b-0 md:gap-7"
-                        >
-                          <div class="w-[75px] flex-shrink-0">
-                            <p class="text-base text-brand-dark-blue">
-                              Contact
-                            </p>
-                          </div>
-                          <div class="w-full">
-                            <p class="text-base text-brand-dark-blue">
-                              john@example.com
-                            </p>
-                          </div>
-                          <div class="w-[75px] flex-shrink-0">
-                            <button
-                              type="button"
-                              class="text-base text-brand-gray-light-900"
-                            >
-                              Change
-                            </button>
-                          </div>
-                        </li>
-                        <li
-                          class="flex items-start gap-2 border-b border-brand-gray-50 py-2 px-4 last:border-b-0 md:gap-7"
-                        >
-                          <div class="w-[75px] flex-shrink-0">
-                            <p class="text-base text-brand-dark-blue">
-                              Ship to
-                            </p>
-                          </div>
-                          <div class="w-full">
-                            <p class="text-base text-brand-dark-blue">
-                              Markazi Dist, Taif Markazi <br />
-                              Dist, Taif , Saudi Arabia
-                            </p>
-                          </div>
-                          <div class="w-[75px] flex-shrink-0">
-                            <button
-                              type="button"
-                              class="text-base text-brand-gray-light-900"
-                            >
-                              Change
-                            </button>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pb-5">
-                      <h2 class="pb-7 text-[22px] text-brand-dark-blue">
-                        Shipping method
-                      </h2>
-                      <ul class="border border-brand-gray-50 bg-white">
-                        <li
-                          class="flex items-center justify-between gap-7 border-b border-brand-gray-50 py-2 px-4 last:border-b-0"
-                        >
-                          <div class="flex items-center gap-4">
-                            <input
-                              type="radio"
-                              checked
-                              id="ground-shipping"
-                              name="shipping"
-                            />
-                            <label
-                              for="ground-shipping"
-                              class="text-brand-dark-blue"
-                              >Ground Shipping</label
-                            >
-                          </div>
-                          <p class="text-base text-brand-gray-light-900">
-                            $12.00
-                          </p>
-                        </li>
-                        <li
-                          class="flex items-center justify-between gap-7 border-b border-brand-gray-50 py-2 px-4 last:border-b-0"
-                        >
-                          <div class="flex items-center gap-4">
-                            <input
-                              type="radio"
-                              id="overnight-shipping"
-                              name="shipping"
-                            />
-                            <label
-                              for="overnight-shipping"
-                              class="text-brand-dark-blue"
-                              >Overnight Shipping</label
-                            >
-                          </div>
-                          <p class="text-base text-brand-gray-light-900">
-                            $24.00
-                          </p>
-                        </li>
-                      </ul>
+                </div>
+
+                <!-- start coding for Frequently Bought Together section  -->
+                <div class="py-6">
+                  <h2 class="pb-4 text-lg text-brand-dark-blue">
+                    Frequently Bought Together
+                  </h2>
+
+                  <div class="grid grid-cols-2 gap-4">
+                    <div
+                      class="flex items-center justify-center border border-brand-gray-50 p-2"
+                    >
+                      <figure>
+                        <img
+                          src="./images/product/product-26.png"
+                          alt="product-26"
+                        />
+                      </figure>
                     </div>
                     <div
-                      class="button__area fixed left-0 bottom-0 z-40 flex w-full items-center justify-between border-t border-brand-gray-50 bg-white px-5 pt-2 pb-2 lg:static lg:border-t-0 lg:bg-transparent lg:px-0"
+                      class="flex items-center justify-center border border-brand-gray-50 p-2"
                     >
-                      <button
-                        type="button"
-                        data-id="prev"
-                        class="inline-block w-[190px] border border-brand-gray-light-900 py-3 px-1 text-center text-brand-gray-light-900"
-                      >
-                        Return to Information
-                      </button>
-                      <button
-                        type="button"
-                        data-id="next"
-                        class="inline-block w-[190px] bg-brand-dark-blue px-1 py-3 text-center text-white"
-                      >
-                        Continue to Payment
-                      </button>
+                      <figure>
+                        <img
+                          src="./images/product/product-27.png"
+                          alt="product-27"
+                        />
+                      </figure>
                     </div>
                   </div>
-                  <div class="step-3 step pb-5 lg:pb-0">
-                    <div class="pb-10">
-                      <ul class="border border-brand-gray-50 bg-white">
-                        <li
-                          class="flex items-start gap-2 border-b border-brand-gray-50 py-2 px-4 last:border-b-0 md:gap-7"
-                        >
-                          <div class="w-[75px] flex-shrink-0">
-                            <p class="text-base text-brand-dark-blue">
-                              Contact
-                            </p>
-                          </div>
-                          <div class="w-full">
-                            <p class="text-base text-brand-dark-blue">
-                              john@example.com
-                            </p>
-                          </div>
-                          <div class="w-[75px] flex-shrink-0">
-                            <button
-                              type="button"
-                              class="text-base text-brand-gray-light-900"
-                            >
-                              Change
-                            </button>
-                          </div>
-                        </li>
-                        <li
-                          class="flex items-start gap-2 border-b border-brand-gray-50 py-2 px-4 leading-[1] last:border-b-0 md:gap-7"
-                        >
-                          <div class="w-[75px] flex-shrink-0">
-                            <p class="text-base text-brand-dark-blue">
-                              Ship to
-                            </p>
-                          </div>
-                          <div class="w-full">
-                            <p class="text-base text-brand-dark-blue">
-                              Markazi Dist, Taif Markazi <br />
-                              Dist, Taif , Saudi Arabia
-                            </p>
-                          </div>
-                          <div class="w-[75px] flex-shrink-0">
-                            <button
-                              type="button"
-                              class="text-base text-brand-gray-light-900"
-                            >
-                              Change
-                            </button>
-                          </div>
-                        </li>
-                        <li
-                          class="flex items-start gap-2 border-b border-brand-gray-50 py-2 px-4 leading-[1] last:border-b-0 md:gap-7"
-                        >
-                          <div class="w-[75px] flex-shrink-0">
-                            <p class="text-base text-brand-dark-blue">Method</p>
-                          </div>
-                          <div class="w-full">
-                            <p class="text-base text-brand-dark-blue">
-                              Ground Shipping
-                            </p>
-                          </div>
-                          <div class="w-[75px] flex-shrink-0">
-                            <button
-                              type="button"
-                              class="text-base text-brand-gray-light-900"
-                            >
-                              Change
-                            </button>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pb-8">
-                      <div class="pb-7">
-                        <h2 class="text-[22px] text-brand-dark-blue">
-                          Payment
-                        </h2>
-                        <p class="text-sm text-brand-dark-blue">
-                          All transactions are secure and encrypted.
-                        </p>
-                      </div>
-                      <ul class="border border-brand-gray-50 bg-white">
-                        <li class="">
-                          <div
-                            class="flex w-full items-center gap-4 border-b border-brand-gray-50 py-3 px-4"
-                          >
-                            <input
-                              type="radio"
-                              checked
-                              id="credit_card"
-                              name="card"
-                            />
-                            <label
-                              for="credit_card"
-                              class="text-brand-dark-blue"
-                              >Credit Card</label
-                            >
-                          </div>
-                          <div class="bg-brand-gray px-5 py-3">
-                            <p class="pb-4 text-xs text-brand-dark-blue">
-                              Pay with your credit card via Stripe. TEST MODE
-                              ENABLED. In test mode, you can use the card number
-                              4242424242424242 with any CVC and a valid
-                              expiration date or check the Testing Stripe
-                              documentation for more card numbers.
-                            </p>
-                            <div class="grid grid-cols-12 gap-4 pb-5">
-                              <div class="col-span-12">
-                                <h2 class="pb-3 text-sm text-brand-dark-blue">
-                                  Card Numbers
-                                  <span class="text-brand-pink">*</span>
-                                </h2>
-                                <div class="w-full">
-                                  <input
-                                    type="text"
-                                    name="card_number"
-                                    placeholder="1234    1234     1234     1234"
-                                    class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                                  />
-                                </div>
-                              </div>
-                              <div class="col-span-6">
-                                <h2 class="pb-3 text-sm text-brand-dark-blue">
-                                  Expiry Date
-                                  <span class="text-brand-pink">*</span>
-                                </h2>
-                                <div class="w-full">
-                                  <input
-                                    type="text"
-                                    name="email"
-                                    placeholder="MM / YY"
-                                    class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                                  />
-                                </div>
-                              </div>
-                              <div class="col-span-6">
-                                <h2 class="pb-3 text-sm text-brand-dark-blue">
-                                  Card Code (CVC)
-                                  <span class="text-brand-pink">*</span>
-                                </h2>
-                                <div class="relative w-full">
-                                  <input
-                                    type="text"
-                                    name="email"
-                                    placeholder="CVC"
-                                    class="w-full border border-brand-gray-light-200 px-5 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                                  />
-                                  <img
-                                    src="./images/help.svg"
-                                    class="absolute top-3 right-4"
-                                    alt="help"
-                                  />
-                                </div>
-                              </div>
-                              <div class="col-span-12">
-                                <div class="relative">
-                                  <input
-                                    id="nails"
-                                    checked
-                                    name="nails"
-                                    class="peer m-0 opacity-0"
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    for="nails"
-                                    class="select-none pl-2 text-sm text-brand-dark-blue transition-all duration-200 before:absolute before:top-[4px] before:left-0 before:inline-block before:h-[16px] before:w-[16px] before:cursor-pointer before:border before:border-brand-gray-light-200 before:bg-white peer-checked:after:absolute peer-checked:after:top-[8px] peer-checked:after:left-[4px] peer-checked:after:h-[12px] peer-checked:after:w-[12px] peer-checked:after:bg-[url(../images/check.svg)] peer-checked:after:bg-no-repeat"
-                                    >Save payment information to my account for
-                                    future purchases.
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="">
-                          <div
-                            class="flex w-full items-center gap-4 border-b border-brand-gray-50 py-3 px-4"
-                          >
-                            <input
-                              type="radio"
-                              checked
-                              id="cashon_delivery"
-                              name="card"
-                            />
-                            <label
-                              for="cashon_delivery"
-                              class="text-brand-dark-blue"
-                              >Cash on Delivery</label
-                            >
-                          </div>
-                        </li>
-                        <li class="">
-                          <div
-                            class="flex w-full items-center justify-between gap-4 border-b border-brand-gray-50 py-3 px-4"
-                          >
-                            <div class="flex items-center gap-4">
-                              <input
-                                type="radio"
-                                checked
-                                id="credit_card"
-                                name="card"
-                              />
-                              <label
-                                for="credit_card"
-                                class="text-brand-dark-blue"
-                                >Credit Card</label
-                              >
-                            </div>
-                            <div class="flex items-center gap-3">
-                              <figure>
-                                <img src="./images/paypal.png" alt="paypal" />
-                              </figure>
-                              <figure>
-                                <img
-                                  src="./images/paypal-credit.png"
-                                  alt="paypal"
-                                />
-                              </figure>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pb-8">
-                      <div class="pb-7">
-                        <h2 class="text-[22px] text-brand-dark-blue">
-                          Billing address
-                        </h2>
-                        <p class="text-sm text-brand-dark-blue">
-                          Select the address that matches your card or payment
-                          method.
-                        </p>
-                      </div>
-                      <ul class="border border-brand-gray-50 bg-white">
-                        <li class="">
-                          <div
-                            class="flex w-full items-center gap-4 border-b border-brand-gray-50 py-3 px-4"
-                          >
-                            <input
-                              type="radio"
-                              checked
-                              id="credit_card"
-                              name="card"
-                            />
-                            <label
-                              for="credit_card"
-                              class="text-brand-dark-blue"
-                              >Same as shipping address</label
-                            >
-                          </div>
-                        </li>
-                        <li class="">
-                          <div
-                            class="flex w-full items-center gap-4 border-b border-brand-gray-50 py-3 px-4"
-                          >
-                            <input
-                              type="radio"
-                              checked
-                              id="cashon_delivery"
-                              name="card"
-                            />
-                            <label
-                              for="cashon_delivery"
-                              class="text-brand-dark-blue"
-                              >Use a different billing address</label
-                            >
-                          </div>
-                        </li>
-                      </ul>
-                      <div class="relative mt-4">
+                  <div class="w-[410px] max-w-full py-5">
+                    <p class="pb-4 text-base text-brand-dark-blue">
+                      Price for all three:
+                      <span class="font-medium text-brand-pink"
+                        >SAR 111.69</span
+                      >
+                    </p>
+
+                    <button
+                      type="button"
+                      class="mb-6 w-full bg-brand-dark-blue px-5 py-3 text-center text-white"
+                    >
+                      Add all to cart
+                    </button>
+                    <div class="space-y-3">
+                      <div class="relative">
                         <input
-                          id="nails"
-                          checked
-                          name="nails"
+                          id="option-1"
+                          name="option-1"
                           class="peer m-0 opacity-0"
                           type="checkbox"
                         />
                         <label
-                          for="nails"
+                          for="option-1"
                           class="select-none pl-2 text-sm text-brand-dark-blue transition-all duration-200 before:absolute before:top-[4px] before:left-0 before:inline-block before:h-[16px] before:w-[16px] before:cursor-pointer before:border before:border-brand-gray-light-200 before:bg-white peer-checked:after:absolute peer-checked:after:top-[8px] peer-checked:after:left-[4px] peer-checked:after:h-[12px] peer-checked:after:w-[12px] peer-checked:after:bg-[url(../images/check.svg)] peer-checked:after:bg-no-repeat"
-                          >I have read and agree to the website Terms and
-                          Conditions
-                          <span class="text-brand-pink">*</span></label
+                          >Bio Oil Skincare Oil</label
+                        >
+                      </div>
+                      <div class="relative">
+                        <input
+                          id="option-2"
+                          name="option-2"
+                          class="peer m-0 opacity-0"
+                          type="checkbox"
+                        />
+                        <label
+                          for="option-2"
+                          class="select-none pl-2 text-sm text-brand-dark-blue transition-all duration-200 before:absolute before:top-[4px] before:left-0 before:inline-block before:h-[16px] before:w-[16px] before:cursor-pointer before:border before:border-brand-gray-light-200 before:bg-white peer-checked:after:absolute peer-checked:after:top-[8px] peer-checked:after:left-[4px] peer-checked:after:h-[12px] peer-checked:after:w-[12px] peer-checked:after:bg-[url(../images/check.svg)] peer-checked:after:bg-no-repeat"
+                          >Some By Mi AHA. BHA. PHA 30 Days Miracle Starter - 4
+                          Piece -
+                          <span class="font-medium text-brand-pink"
+                            >SAR 12.10</span
+                          ></label
+                        >
+                      </div>
+                      <div class="relative">
+                        <input
+                          id="option-3"
+                          name="option-3"
+                          class="peer m-0 opacity-0"
+                          type="checkbox"
+                        />
+                        <label
+                          for="option-3"
+                          class="select-none pl-2 text-sm text-brand-dark-blue transition-all duration-200 before:absolute before:top-[4px] before:left-0 before:inline-block before:h-[16px] before:w-[16px] before:cursor-pointer before:border before:border-brand-gray-light-200 before:bg-white peer-checked:after:absolute peer-checked:after:top-[8px] peer-checked:after:left-[4px] peer-checked:after:h-[12px] peer-checked:after:w-[12px] peer-checked:after:bg-[url(../images/check.svg)] peer-checked:after:bg-no-repeat"
+                          >Body Blendz Lash & Brow Growth Serum -
+                          <span class="font-medium text-brand-pink"
+                            >SAR 12.10</span
+                          ></label
                         >
                       </div>
                     </div>
+                  </div>
+                </div>
 
-                    <div
-                      class="button__area fixed left-0 bottom-0 z-40 flex w-full items-center justify-between border-t border-brand-gray-50 bg-white px-5 pb-2 pt-4 lg:static lg:border-t-0 lg:bg-transparent lg:px-0"
-                    >
+                <!-- end Frequently Bought Together section -->
+
+                <!-- empty stock notify add to chart and select an option -->
+                <div class="hidden md:block">
+                  <div
+                    class="empty-stock-notify hidden w-[320px] max-w-full pt-5"
+                  >
+                    <div class="flex items-center gap-3 pb-5">
+                      <svg
+                        width="20"
+                        height="23"
+                        viewBox="0 0 20 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
+                          fill="#353653"
+                        />
+                      </svg>
+                      <p class="text-base text-brand-dark-blue">
+                        Notify me when it’s back in stock
+                      </p>
+                    </div>
+                    <div class="w-[260px] max-w-full pb-3.5">
+                      <input
+                        type="text"
+                        placeholder="Insert your email address"
+                        class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                      />
+                    </div>
+                    <div class="flex w-full items-center gap-5">
                       <button
                         type="button"
-                        data-id="prev"
-                        class="inline-block w-[190px] border border-brand-gray-light-900 py-3 px-1 text-center text-brand-gray-light-900"
+                        class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
                       >
-                        Return to Information
+                        Notify me
                       </button>
                       <button
                         type="button"
-                        data-id="next"
-                        class="inline-block w-[190px] bg-brand-dark-blue px-1 py-3 text-center text-white"
+                        class="inline-block flex-shrink-0 border-none bg-transparent focus:outline-none focus:ring-0"
                       >
-                        Continue to Payment
+                        <svg
+                          width="30"
+                          height="26"
+                          viewBox="0 0 30 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                            fill="#353653"
+                          />
+                        </svg>
                       </button>
                     </div>
                   </div>
-                  <div class="step-4 step">
-                    <div
-                      class="mb-8 flex gap-5 border-b border-brand-gray-light-200 pb-7"
-                    >
-                      <figure>
-                        <img
-                          src="./images/check-circle.png"
-                          alt="check-circle.png"
-                        />
-                      </figure>
-                      <div class="">
-                        <h2 class="text-[22px] text-brand-dark-blue">
-                          Order 2778
-                        </h2>
-                        <p class="text-base text-brand-dark-blue">
-                          Thank you Jhon
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      class="mb-8 border border-brand-gray-light-200 bg-white"
-                    >
-                      <div class="py-5">
-                        <ul class="flex justify-center px-7">
-                          <li
-                            class="relative w-full pr-10 after:absolute after:top-1.5 after:right-[40%] after:h-[1px] after:w-[60px] after:max-w-full after:translate-x-[100%] after:bg-brand-gray-light-200 last:after:content-none sm:pr-36 sm:after:right-[50%] sm:after:w-[100px]"
+                </div>
+
+                <!--start coding for empty tablet bottom stock notify-->
+                <div class="lg:hidden">
+                  <div
+                    class="fixed bottom-0 left-0 right-0 z-40 w-full border-t border-brand-gray-50 bg-white px-4 py-3.5"
+                  >
+                    <div class="md:hidden">
+                      <div class="empty-stock-notify hidden w-full">
+                        <div class="flex items-center gap-3 pb-4">
+                          <svg
+                            width="20"
+                            height="23"
+                            viewBox="0 0 20 23"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <div
-                              class="tab-active flex w-24 max-w-full flex-col items-center gap-2"
-                            >
-                              <svg
-                                class="fill-brand-gray-light-900"
-                                width="20"
-                                height="13"
-                                viewBox="0 0 20 13"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M7.3916 12.9179L0.861816 6.79622L1.88772 5.70188L7.35794 10.8302L18.0944 0.09375L19.1551 1.15434L7.3916 12.9179Z"
-                                />
-                              </svg>
-                              <div>
-                                <p
-                                  class="flex-shrink-0 text-center text-sm text-brand-gray-light-900"
-                                >
-                                  Confirmed
-                                </p>
-                                <p
-                                  class="text-center text-xs text-brand-gray-light-900"
-                                >
-                                  May 28, 2022
-                                </p>
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="relative w-full pr-10 after:absolute after:top-1.5 after:right-[40%] after:h-[1px] after:w-[60px] after:max-w-full after:translate-x-[100%] after:bg-brand-gray-light-200 last:after:content-none sm:pr-36 sm:after:right-[50%] sm:after:w-[100px]"
-                          >
-                            <div
-                              class="flex w-24 max-w-full flex-col items-center gap-2"
-                            >
-                              <svg
-                                class="fill-brand-gray-light-900"
-                                width="20"
-                                height="13"
-                                viewBox="0 0 20 13"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M7.3916 12.9179L0.861816 6.79622L1.88772 5.70188L7.35794 10.8302L18.0944 0.09375L19.1551 1.15434L7.3916 12.9179Z"
-                                />
-                              </svg>
-                              <p
-                                class="flex-shrink-0 text-center text-sm text-brand-gray-light-900"
-                              >
-                                Processing
-                              </p>
-                            </div>
-                          </li>
-                          <li
-                            class="relative max-w-full pr-10 after:absolute after:top-1.5 after:right-[40%] after:h-[1px] after:w-[60px] after:max-w-full after:translate-x-[100%] after:bg-brand-gray-light-200 last:pr-0 last:after:content-none sm:pr-24 sm:after:right-[50%] sm:after:w-[100px]"
-                          >
-                            <div
-                              class="flex w-24 max-w-full flex-col items-center gap-2"
-                            >
-                              <svg
-                                class="fill-brand-gray-light-900"
-                                width="28"
-                                height="21"
-                                viewBox="0 0 28 21"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M27.8398 8.0625V7.95703C27.8434 7.93672 27.8393 7.9158 27.8281 7.89844V7.875C27.8164 7.85156 27.8164 7.82812 27.8047 7.81641H27.793L26.1523 3.70313C26.0319 3.39774 25.822 3.13587 25.5501 2.95185C25.2783 2.76783 24.9572 2.67024 24.6289 2.67188H20.3398V1.5C20.3398 1.31352 20.2658 1.13468 20.1339 1.00282C20.002 0.870954 19.8232 0.796875 19.6367 0.796875H1.82422C1.3891 0.796875 0.971798 0.969726 0.664122 1.2774C0.356445 1.58508 0.183594 2.00238 0.183594 2.4375V15.5625C0.183594 15.9976 0.356445 16.4149 0.664122 16.7226C0.971798 17.0303 1.3891 17.2031 1.82422 17.2031H3.53516C3.69653 17.9979 4.1277 18.7124 4.7556 19.2256C5.3835 19.7388 6.16952 20.0191 6.98047 20.0191C7.79142 20.0191 8.57744 19.7388 9.20534 19.2256C9.83324 18.7124 10.2644 17.9979 10.4258 17.2031H17.5977C17.759 17.9979 18.1902 18.7124 18.8181 19.2256C19.446 19.7388 20.232 20.0191 21.043 20.0191C21.8539 20.0191 22.6399 19.7388 23.2678 19.2256C23.8957 18.7124 24.3269 17.9979 24.4883 17.2031H26.1992C26.6343 17.2031 27.0516 17.0303 27.3593 16.7226C27.667 16.4149 27.8398 15.9976 27.8398 15.5625V8.0625ZM24.6289 4.07812C24.6765 4.08048 24.7224 4.09596 24.7617 4.12285C24.8011 4.14974 24.8321 4.18699 24.8516 4.23047L26.0937 7.35938H20.3398V4.07812H24.6289ZM1.82422 2.20312H18.9336V10.1719H1.58984V2.4375C1.58984 2.37534 1.61454 2.31573 1.65849 2.27177C1.70244 2.22782 1.76206 2.20312 1.82422 2.20312ZM1.58984 15.5625V11.5781H18.9336V13.6875C18.2476 14.2057 17.7729 14.9552 17.5977 15.7969H10.4258C10.2644 15.0021 9.83324 14.2876 9.20534 13.7744C8.57744 13.2612 7.79142 12.9809 6.98047 12.9809C6.16952 12.9809 5.3835 13.2612 4.7556 13.7744C4.1277 14.2876 3.69653 15.0021 3.53516 15.7969H1.82422C1.76206 15.7969 1.70244 15.7722 1.65849 15.7282C1.61454 15.6843 1.58984 15.6247 1.58984 15.5625ZM6.98047 18.6094C6.56327 18.6094 6.15545 18.4857 5.80856 18.2539C5.46168 18.0221 5.19131 17.6927 5.03166 17.3072C4.87201 16.9218 4.83023 16.4977 4.91162 16.0885C4.99301 15.6793 5.19391 15.3034 5.48892 15.0084C5.78392 14.7134 6.15977 14.5125 6.56895 14.4312C6.97813 14.3498 7.40225 14.3915 7.78769 14.5512C8.17313 14.7108 8.50257 14.9812 8.73435 15.3281C8.96613 15.675 9.08984 16.0828 9.08984 16.5C9.08677 17.0585 8.86354 17.5932 8.46862 17.9882C8.0737 18.3831 7.53896 18.6063 6.98047 18.6094ZM21.043 18.6094C20.6258 18.6094 20.2179 18.4857 19.8711 18.2539C19.5242 18.0221 19.2538 17.6927 19.0942 17.3072C18.9345 16.9218 18.8927 16.4977 18.9741 16.0885C19.0555 15.6793 19.2564 15.3034 19.5514 15.0084C19.8464 14.7134 20.2223 14.5125 20.6314 14.4312C21.0406 14.3498 21.4648 14.3915 21.8502 14.5512C22.2356 14.7108 22.5651 14.9812 22.7968 15.3281C23.0286 15.675 23.1523 16.0828 23.1523 16.5C23.1493 17.0585 22.926 17.5932 22.5311 17.9882C22.1362 18.3831 21.6015 18.6063 21.043 18.6094ZM26.4336 15.5625C26.4336 15.6247 26.4089 15.6843 26.3649 15.7282C26.321 15.7722 26.2614 15.7969 26.1992 15.7969H24.4883C24.3262 15.0028 23.8947 14.2891 23.2669 13.7766C22.6391 13.2641 21.8534 12.9842 21.043 12.9844C20.8068 12.9845 20.5713 13.0081 20.3398 13.0547V8.76562H26.4336V15.5625Z"
-                                />
-                              </svg>
-                              <p
-                                class="flex-shrink-0 text-center text-sm text-brand-gray-light-900"
-                              >
-                                Shipped
-                              </p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="border-t border-brand-gray-light-200">
-                        <figure>
-                          <img
-                            class="w-full"
-                            src="./images/map.png"
-                            alt="map.png"
+                            <path
+                              d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
+                              fill="#353653"
+                            />
+                          </svg>
+                          <p class="text-base text-brand-dark-blue">
+                            Notify me when it’s back in stock
+                          </p>
+                        </div>
+                        <div class="w-full pb-2.5">
+                          <input
+                            type="text"
+                            placeholder="Insert your email address"
+                            class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
                           />
-                        </figure>
+                        </div>
+                        <button
+                          type="button"
+                          class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
+                        >
+                          Notify me
+                        </button>
                       </div>
                     </div>
-                    <div
-                      class="border border-brand-gray-light-200 bg-white px-3 py-3 md:px-5 md:py-6"
-                    >
-                      <div class="border-b border-brand-gray-light-200 pb-5">
-                        <h2 class="text-[22px] text-brand-dark-blue">
-                          Order updates
-                        </h2>
-                        <p class="text-sm text-brand-dark-blue">
-                          You’ll get shipping and delivery updates by email.
-                        </p>
-                      </div>
-                      <div class="py-6">
-                        <h2 class="pb-4 text-[22px] text-brand-dark-blue">
-                          Information
-                        </h2>
-                        <div class="flex justify-between gap-14 md:gap-20">
-                          <div class="w-[245px]">
-                            <div class="pb-8">
-                              <h2 class="pb-5 font-bold text-brand-dark-blue">
-                                Contact information
-                              </h2>
-                              <p class="text-brand-dark-blue">
-                                jhon@example.com
-                              </p>
-                            </div>
-                            <div class="pb-8">
-                              <h2 class="pb-5 font-bold text-brand-dark-blue">
-                                Shipping address
-                              </h2>
-                              <address
-                                class="not-italic leading-[1.3] text-brand-dark-blue"
-                              >
-                                <p>Jhon</p>
-                                <p>Markazi Square</p>
-                                <p>Tehran</p>
-                                <p>Tehran (تهران)</p>
-                                <p>16658</p>
-                                <p>Iran</p>
-                              </address>
-                            </div>
-                            <div class="pb-8">
-                              <h2 class="pb-5 font-bold text-brand-dark-blue">
-                                Shipping
-                              </h2>
-                              <p class="text-brand-dark-blue">
-                                Ground Shipping
-                              </p>
-                            </div>
-                          </div>
-                          <div class="w-[245px]">
-                            <div class="pb-8">
-                              <h2 class="pb-5 font-bold text-brand-dark-blue">
-                                Payment
-                              </h2>
-                              <p class="text-brand-dark-blue">Credit Card</p>
-                            </div>
-                            <div class="pb-8">
-                              <h2 class="pb-5 font-bold text-brand-dark-blue">
-                                Billing address
-                              </h2>
-                              <address
-                                class="not-italic leading-[1.3] text-brand-dark-blue"
-                              >
-                                <p>Jhon</p>
-                                <p>Markazi Square</p>
-                                <p>Tehran</p>
-                                <p>Tehran (تهران)</p>
-                                <p>16658</p>
-                                <p>Iran</p>
-                              </address>
-                            </div>
-                          </div>
+                    <div class="tab-select-option">
+                      <button
+                        type="button"
+                        class="select-option-btn w-full border-none bg-brand-gray-light-900 py-2.5 text-base text-white focus:outline-none focus:ring-0"
+                      >
+                        Select an option
+                      </button>
+                      <div class="add-to-cart hidden w-full">
+                        <div class="flex w-full gap-4">
+                          <input
+                            type="text"
+                            value="1"
+                            placeholder="1"
+                            class="w-[82px] border border-brand-gray-50 py-3.5 text-center focus:ring-0"
+                          />
+                          <button
+                            type="button"
+                            class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
+                          >
+                            Add to Cart
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
-              <div
-                class="flex-xl-shrink-0 w-full max-w-full bg-white lg:w-[505px]"
-              >
+            </div>
+          </div>
+        </section>
+        <!--end product view area-->
+        <!-- start coding for details area accordion  -->
+        <section class="mt-3 bg-white px-4 pb-5 md:pt-5 md:pb-12">
+          <div class="container mx-auto">
+            <div class="pt-5">
+              <div class="accordion-item pb-3">
                 <div
-                  class="order-summary flex select-none items-center justify-between gap-5 border-b border-brand-gray-50 px-6 py-6 lg:hidden"
+                  class="js-accordion-title bordre-brand-gray-50 flex select-none items-center justify-between gap-5 border-b pt-2 pb-5"
                 >
-                  <div class="flex items-center gap-5 md:gap-12">
-                    <p class="text-lg text-brand-dark-blue">
-                      Show Order Summary
-                    </p>
+                  <h2 class="text-[22px] text-brand-gray-light-900">
+                    Description
+                  </h2>
+                  <div class="accordion-icon">
                     <svg
-                      width="13"
-                      height="8"
-                      class="transition-all duration-200 group-first:rotate-180"
-                      viewBox="0 0 13 8"
+                      class="fill-brand-gray-light-900 transition-all duration-200"
+                      width="21"
+                      height="12"
+                      viewBox="0 0 21 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M12.0012 6.31628L11.136 7.20001L5.9978 1.97082L0.867932 7.21009L0.00125369 6.32805L5.9964 0.205052L12.0012 6.31628Z"
-                        fill="#353653"
+                        d="M20.7253 2.09896L19.2833 0.712964L10.719 8.91548L2.16986 0.698487L0.72529 2.08205L10.7165 11.685L20.7253 2.09896Z"
                       />
                     </svg>
                   </div>
-                  <p class="text-base font-bold text-brand-dark-blue">
-                    SAR 117.60
-                  </p>
                 </div>
-                <div class="order-summary-content hidden w-full lg:block">
-                  <div class="bg-white py-3">
-                    <div
-                      class="divide-y divide-brand-gray-50 overflow-y-auto bg-white px-4 pb-3"
+                <div class="accordion-content pt-4">
+                  <div class="pb-5">
+                    <h3 class="pb-2 text-base font-bold text-brand-dark-blue">
+                      Valentino Donna For Women :
+                    </h3>
+                    <p class="text-base text-brand-dark-blue">
+                      An elegant oriental floral fragrance for women that was
+                      released in 2005. A hint of elegance, fragility,
+                      irreverence, and candor emerges in the sensuous,
+                      independent person capable of sudden passion and
+                      unexpected shyness. Rose essence mingles with notes of
+                      bergamot and iris pallida, while notes of leather melt
+                      into accents of patchouli and vanilla. The perfect scent
+                      for every occasion.
+                    </p>
+                  </div>
+                  <div class="pb-4">
+                    <h3 class="pb-2 text-base font-bold text-brand-dark-blue">
+                      About the Brand:
+                    </h3>
+                    <p class="text-base text-brand-dark-blue">
+                      Valentino founded the global brand in 1962, which
+                      specialized in designinig and manufacture of the finest
+                      and most luxurious types of perfumes until it gained wide
+                      international fame for its unique scents. <br /><br />
+                      Valentino is where excellence and originality are
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item pb-4">
+                <div
+                  class="js-accordion-title bordre-brand-gray-50 flex select-none items-center justify-between gap-5 border-b pt-2 pb-5"
+                >
+                  <h2 class="text-[22px] text-brand-gray-light-900">
+                    Ingredients
+                  </h2>
+                  <div class="accordion-icon">
+                    <svg
+                      class="fill-brand-gray-light-900 transition-all duration-200"
+                      width="21"
+                      height="12"
+                      viewBox="0 0 21 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <div class="flex items-start gap-6 py-6">
-                        <div
-                          class="flex w-16 max-w-xl flex-shrink-0 justify-center"
-                        >
-                          <img
-                            src="./images/cart-image.png"
-                            alt="cart-image.png"
-                          />
-                        </div>
-                        <div class="">
-                          <h3 class="pb-1 text-brand-gray-light-900">Aroub</h3>
-                          <h2
-                            class="text-base leading-tight text-brand-dark-blue lg:text-lg"
-                          >
-                            Aroub Perfume Toby Rose - Eau de Perfume
-                          </h2>
-                          <div
-                            class="flex w-64 items-center justify-between gap-3 pt-5 pr-6 lg:w-auto"
-                          >
-                            <div>
-                              <p
-                                class="text-base font-medium leading-[1] text-brand-pink"
-                              >
-                                SAR 111.69
-                              </p>
-                              <span
-                                class="text-sm text-brand-gray-light-900 line-through"
-                                >SAR 111.69</span
-                              >
-                            </div>
-                            <div
-                              class="bg-brand-pink px-[2px] py-[3px] text-xs text-white"
-                            >
-                              -75%
-                            </div>
-                          </div>
-                          <div class="relative flex pt-2.5">
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
-                            >
-                              -
-                            </button>
-                            <input
-                              type="text"
-                              value="1"
-                              class="w-12 border-y border-x-0 border-brand-gray-light-200 px-4 py-2 text-center text-brand-dark-blue focus:border-brand-gray-light-200 focus:outline-none focus:ring-0"
-                            />
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
-                            >
-                              +
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex items-start gap-6 py-6">
-                        <div
-                          class="flex w-16 max-w-xl flex-shrink-0 justify-center"
-                        >
-                          <img
-                            src="./images/cart-image.png"
-                            alt="cart-image.png"
-                          />
-                        </div>
-                        <div class="">
-                          <h3 class="pb-1 text-brand-gray-light-900">Aroub</h3>
-                          <h2
-                            class="text-base leading-tight text-brand-dark-blue lg:text-lg"
-                          >
-                            Aroub Perfume Toby Rose - Eau de Perfume
-                          </h2>
-                          <div
-                            class="flex w-64 items-center justify-between gap-3 pt-5 pr-6 lg:w-auto"
-                          >
-                            <div>
-                              <p
-                                class="text-base font-medium leading-[1] text-brand-pink"
-                              >
-                                SAR 111.69
-                              </p>
-                              <span
-                                class="text-sm text-brand-gray-light-900 line-through"
-                                >SAR 111.69</span
-                              >
-                            </div>
-                            <div
-                              class="bg-brand-pink px-[2px] py-[3px] text-xs text-white"
-                            >
-                              -75%
-                            </div>
-                          </div>
-                          <div class="relative flex pt-2.5">
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
-                            >
-                              -
-                            </button>
-                            <input
-                              type="text"
-                              value="1"
-                              class="w-12 border-y border-x-0 border-brand-gray-light-200 px-4 py-2 text-center text-brand-dark-blue focus:border-brand-gray-light-200 focus:outline-none focus:ring-0"
-                            />
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
-                            >
-                              +
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      <path
+                        d="M20.7253 2.09896L19.2833 0.712964L10.719 8.91548L2.16986 0.698487L0.72529 2.08205L10.7165 11.685L20.7253 2.09896Z"
+                      />
+                    </svg>
                   </div>
-                  <div class="px-5">
-                    <div class="flex gap-4 border-t border-brand-gray-50 py-8">
+                </div>
+                <div class="accordion-content pt-4">
+                  <div class="pb-5">
+                    <h3 class="pb-2 text-base font-bold text-brand-dark-blue">
+                      Valentino Donna For Women :
+                    </h3>
+                    <p class="text-base text-brand-dark-blue">
+                      Ingredients content
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item pb-4">
+                <div
+                  class="js-accordion-title bordre-brand-gray-50 flex select-none items-center justify-between gap-5 border-b pt-2 pb-5"
+                >
+                  <h2 class="text-[22px] text-brand-gray-light-900">
+                    How to use
+                  </h2>
+                  <div class="accordion-icon">
+                    <svg
+                      class="fill-brand-gray-light-900 transition-all duration-200"
+                      width="21"
+                      height="12"
+                      viewBox="0 0 21 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.7253 2.09896L19.2833 0.712964L10.719 8.91548L2.16986 0.698487L0.72529 2.08205L10.7165 11.685L20.7253 2.09896Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-content pt-4">
+                  <div class="pb-5">
+                    <h3 class="pb-2 text-base font-bold text-brand-dark-blue">
+                      Valentino Donna For Women :
+                    </h3>
+                    <p class="text-base text-brand-dark-blue">
+                      Ingredients content
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item pb-4">
+                <div
+                  class="js-accordion-title bordre-brand-gray-50 flex select-none items-center justify-between gap-5 border-b pt-2 pb-5"
+                >
+                  <h2 class="text-[22px] text-brand-gray-light-900">Reviews</h2>
+                  <div class="accordion-icon">
+                    <svg
+                      class="fill-brand-gray-light-900 transition-all duration-200"
+                      width="21"
+                      height="12"
+                      viewBox="0 0 21 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.7253 2.09896L19.2833 0.712964L10.719 8.91548L2.16986 0.698487L0.72529 2.08205L10.7165 11.685L20.7253 2.09896Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-content pt-4">
+                  <div class="pb-5">
+                    <div class="pb-5">
+                      <h2 class="text-base font-bold text-brand-dark-blue">
+                        19 Reviews For Valentino Donna For Women - Eau de Parfum
+                      </h2>
+                    </div>
+                    <div
+                      class="flex flex-col divide-y divide-brand-gray-50 border border-brand-gray-50 p-2 md:flex-row lg:divide-y-0 lg:divide-x"
+                    >
                       <div class="w-full">
-                        <input
-                          type="text"
-                          name="email"
-                          placeholder="Enter Promo Code"
-                          class="w-full border border-brand-gray-light-200 px-4 py-3 text-brand-dark placeholder:text-brand-gray-light-900"
-                        />
+                        <div
+                          class="max-w-full py-5 pl-1 md:pr-4 xl:w-[430px] xl:px-8"
+                        >
+                          <div
+                            class="flex flex-col items-center gap-3 pb-5 md:flex-row md:items-end"
+                          >
+                            <div class="">
+                              <h2
+                                class="text-center text-[36px] font-bold text-brand-pink"
+                              >
+                                4.5
+                              </h2>
+                              <ul class="flex items-center gap-1">
+                                <li>
+                                  <img
+                                    class="h-[26px] w-[26px]"
+                                    src="./images/single-product/star.svg"
+                                    alt="star.svg"
+                                  />
+                                </li>
+                                <li>
+                                  <img
+                                    class="h-[26px] w-[26px]"
+                                    src="./images/single-product/star.svg"
+                                    alt="star.svg"
+                                  />
+                                </li>
+                                <li>
+                                  <img
+                                    class="h-[26px] w-[26px]"
+                                    src="./images/single-product/star.svg"
+                                    alt="star.svg"
+                                  />
+                                </li>
+                                <li>
+                                  <img
+                                    class="h-[26px] w-[26px]"
+                                    src="./images/single-product/star.svg"
+                                    alt="star.svg"
+                                  />
+                                </li>
+                                <li>
+                                  <img
+                                    class="h-[26px] w-[26px]"
+                                    src="./images/single-product/star-helf.svg"
+                                    alt="star-helf.svg"
+                                  />
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="text-base text-brand-dark-blue">
+                              Based on 2 Ratings
+                            </p>
+                          </div>
+                          <div
+                            class="flex items-center gap-4 rounded-full bg-brand-gray-50 py-2.5 px-5"
+                          >
+                            <svg
+                              width="26"
+                              height="26"
+                              viewBox="0 0 26 26"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M24.6844 13.6774C25.2094 12.9836 25.5 12.1336 25.5 11.2492C25.5 9.84612 24.7156 8.51799 23.4531 7.77737C23.1281 7.58673 22.7581 7.48639 22.3813 7.48674H14.8875L15.075 3.64612C15.1188 2.71799 14.7906 1.83674 14.1531 1.16487C13.8403 0.833705 13.4628 0.57022 13.0441 0.390696C12.6254 0.211171 12.1743 0.119422 11.7188 0.121117C10.0938 0.121117 8.65625 1.21487 8.225 2.78049L5.54062 12.4992H1.5C0.946875 12.4992 0.5 12.9461 0.5 13.4992V24.8742C0.5 25.4274 0.946875 25.8742 1.5 25.8742H20.2906C20.5781 25.8742 20.8594 25.818 21.1187 25.7055C22.6062 25.0711 23.5656 23.618 23.5656 22.0055C23.5656 21.6117 23.5094 21.2242 23.3969 20.8492C23.9219 20.1555 24.2125 19.3055 24.2125 18.4211C24.2125 18.0274 24.1562 17.6399 24.0438 17.2649C24.5688 16.5711 24.8594 15.7211 24.8594 14.8367C24.8531 14.443 24.7969 14.0524 24.6844 13.6774ZM2.75 23.6242V14.7492H5.28125V23.6242H2.75ZM22.6375 12.593L21.9531 13.1867L22.3875 13.9805C22.5306 14.242 22.6048 14.5356 22.6031 14.8336C22.6031 15.3492 22.3781 15.8399 21.9906 16.1774L21.3062 16.7711L21.7406 17.5649C21.8837 17.8263 21.9579 18.1199 21.9562 18.418C21.9562 18.9336 21.7313 19.4242 21.3438 19.7617L20.6594 20.3555L21.0938 21.1492C21.2369 21.4107 21.3111 21.7043 21.3094 22.0024C21.3094 22.7024 20.8969 23.3336 20.2594 23.6211H7.28125V14.6492L10.3906 3.38362C10.4708 3.09487 10.6429 2.84012 10.8809 2.65798C11.1189 2.47584 11.4097 2.37623 11.7094 2.37424C11.9469 2.37424 12.1812 2.44299 12.3687 2.58362C12.6781 2.81487 12.8438 3.16487 12.825 3.53674L12.525 9.73674H22.35C22.9062 10.0774 23.25 10.6524 23.25 11.2492C23.25 11.7649 23.025 12.2524 22.6375 12.593Z"
+                                fill="#353653"
+                              />
+                            </svg>
+                            <p class="text-sm text-brand-dark-blue">
+                              44 Customer(s) recommended this item
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <button
-                        type="button"
-                        class="inline-block w-[160px] flex-shrink-0 bg-brand-dark-blue px-5 py-3 text-center text-white"
-                      >
-                        Submit
-                      </button>
+                      <div class="w-full">
+                        <div class="space-y-1.5 px-1 py-4 md:px-4 xl:px-10">
+                          <div class="">
+                            <p class="text-sm text-brand-gray-light-900">
+                              Price
+                            </p>
+                            <div
+                              class="h-[18px] w-full rounded-full bg-brand-gray-light"
+                            >
+                              <div
+                                class="relative h-[18px] rounded-full bg-brand-pink"
+                                style="width: 84%"
+                              >
+                                <p
+                                  class="absolute top-[1px] right-2.5 text-xs text-white"
+                                >
+                                  84%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <p class="text-sm text-brand-gray-light-900">
+                              Quality
+                            </p>
+                            <div
+                              class="h-[18px] w-full rounded-full bg-brand-gray-light"
+                            >
+                              <div
+                                class="relative h-[18px] rounded-full bg-brand-pink"
+                                style="width: 90%"
+                              >
+                                <p
+                                  class="absolute top-[1px] right-2.5 text-xs text-white"
+                                >
+                                  90%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <p class="text-sm text-brand-gray-light-900">
+                              Service
+                            </p>
+                            <div
+                              class="h-[18px] w-full rounded-full bg-brand-gray-light"
+                            >
+                              <div
+                                class="relative h-[18px] rounded-full bg-brand-pink"
+                                style="width: 95%"
+                              >
+                                <p
+                                  class="absolute top-[1px] right-2.5 text-xs text-white"
+                                >
+                                  95%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="">
+                            <p class="text-sm text-brand-gray-light-900">
+                              Delivery
+                            </p>
+                            <div
+                              class="h-[18px] w-full rounded-full bg-brand-gray-light"
+                            >
+                              <div
+                                class="relative h-[18px] rounded-full bg-brand-pink"
+                                style="width: 84%"
+                              >
+                                <p
+                                  class="absolute top-[1px] right-2.5 text-xs text-white"
+                                >
+                                  84%
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="pb-7">
-                      <ul class="flex flex-col gap-1.5">
-                        <li class="flex items-center justify-between gap-4">
-                          <p class="text-left text-base text-brand-dark-blue">
-                            Sub total
-                          </p>
-                          <p class="text-right text-base text-brand-dark-blue">
-                            SAR 117.60
-                          </p>
-                        </li>
-                        <li
-                          class="flex items-center justify-between gap-4 pb-1.5"
+                    <div class="py-10">
+                      <div
+                        class="mb-5 flex flex-col justify-between gap-5 md:mb-0 md:flex-row md:items-end"
+                      >
+                        <h3 class="text-base text-brand-dark-blue md:pb-3">
+                          Reviewed by 18 customer(s)
+                        </h3>
+                        <div
+                          class="flex flex-col gap-3 md:flex-row md:items-center"
                         >
-                          <p class="text-left text-base text-brand-dark-blue">
-                            Shipping
-                          </p>
-                          <p class="text-right text-base text-brand-dark-blue">
-                            SAR 10
-                          </p>
-                        </li>
-                        <li
-                          class="flex items-center justify-between gap-4 border-t border-brand-gray-light-200 pt-2"
+                          <h2 class="font-bold text-brand-dark-blue">
+                            Sort by
+                          </h2>
+                          <select
+                            name="sort"
+                            class="w-[295px] max-w-full appearance-none border-0 bg-brand-gray-50 bg-[url(../images/arrow-down.svg)] bg-[length:20px_50px] bg-[right_1rem_center] bg-no-repeat py-3.5 px-5 text-brand-dark-blue"
+                            id=""
+                          >
+                            <option value="recent">Recent review</option>
+                            <option value="recent">Recent review</option>
+                            <option value="recent">Recent review</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="max-h-[610px] overflow-y-auto py-8">
+                        <div
+                          class="flex flex-col gap-4 border-b border-brand-gray-50 py-8 md:flex-row md:gap-6"
                         >
-                          <p
-                            class="text-left text-base font-bold text-brand-dark-blue"
-                          >
-                            Total
-                          </p>
-                          <p
-                            class="text-right text-base font-bold text-brand-dark-blue"
-                          >
-                            SAR 117.70
-                          </p>
-                        </li>
-                      </ul>
+                          <div class="w-[90px] flex-shrink-0">
+                            <div
+                              class="h-[82px] w-[82px] rounded-full bg-brand-gray-light-700"
+                            ></div>
+                            <h2 class="pt-2 text-center text-base font-bold">
+                              ChanSL
+                            </h2>
+                          </div>
+                          <div class="">
+                            <ul class="flex items-center gap-1">
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star-helf.svg"
+                                  alt="star-helf.svg"
+                                />
+                              </li>
+                            </ul>
+                            <h2 class="text-lg font-bold text-brand-dark-blue">
+                              Great Product
+                            </h2>
+                            <article class="pt-6">
+                              <datetime
+                                class="pb-3 text-sm text-brand-gray-light-900"
+                                >April 30, 2022</datetime
+                              >
+                              <p class="text-base text-brand-dark-blue">
+                                I really wasn’t a fan of this scent. It is to me
+                                that stereotypical grandma scent that people
+                                refer to with a lot of floral undertones. It’s
+                                very strong and a trigger for me as someone who
+                                gets migraines.
+                              </p>
+                            </article>
+                            <div class="flex justify-between gap-5 pt-5">
+                              <div class="flex items-center gap-3">
+                                <p class="text-sm text-brand-gray-light-900">
+                                  Share on
+                                </p>
+                                <div class="flex items-center gap-4">
+                                  <a href="#"
+                                    ><img
+                                      src="./images/facebook.svg"
+                                      alt="facebook"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="./images/twitter.svg"
+                                      alt="twitter"
+                                  /></a>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="flex w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full bg-brand-gray-50 px-5 py-3"
+                              >
+                                <p class="text-sm text-brand-dark-blue">
+                                  Helpful ?
+                                </p>
+                                <svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M17.3027 10.4238C17.6309 9.99025 17.8125 9.459 17.8125 8.90626C17.8125 8.02931 17.3223 7.19923 16.5332 6.73634C16.3301 6.61719 16.0988 6.55448 15.8633 6.5547H11.1797L11.2969 4.15431C11.3242 3.57423 11.1191 3.02345 10.7207 2.60353C10.5252 2.39655 10.2893 2.23188 10.0276 2.11967C9.76588 2.00747 9.48395 1.95013 9.19922 1.95119C8.18359 1.95119 7.28516 2.63478 7.01563 3.6133L5.33789 9.68751H2.8125C2.4668 9.68751 2.1875 9.96681 2.1875 10.3125V17.4219C2.1875 17.7676 2.4668 18.0469 2.8125 18.0469H14.5566C14.7363 18.0469 14.9121 18.0117 15.0742 17.9414C16.0039 17.5449 16.6035 16.6367 16.6035 15.6289C16.6035 15.3828 16.5684 15.1406 16.498 14.9063C16.8262 14.4727 17.0078 13.9414 17.0078 13.3887C17.0078 13.1426 16.9727 12.9004 16.9023 12.666C17.2305 12.2324 17.4121 11.7012 17.4121 11.1485C17.4082 10.9024 17.373 10.6582 17.3027 10.4238V10.4238ZM3.59375 16.6406V11.0938H5.17578V16.6406H3.59375ZM16.0234 9.74611L15.5957 10.1172L15.8672 10.6133C15.9566 10.7767 16.003 10.9602 16.002 11.1465C16.002 11.4688 15.8613 11.7754 15.6191 11.9863L15.1914 12.3574L15.4629 12.8535C15.5523 13.0169 15.5987 13.2004 15.5977 13.3867C15.5977 13.709 15.457 14.0156 15.2148 14.2266L14.7871 14.5977L15.0586 15.0938C15.148 15.2572 15.1944 15.4407 15.1934 15.627C15.1934 16.0645 14.9355 16.459 14.5371 16.6387H6.42578V11.0313L8.36914 3.99025C8.41925 3.80978 8.52682 3.65056 8.67555 3.53673C8.82428 3.42289 9.00607 3.36063 9.19336 3.35939C9.3418 3.35939 9.48828 3.40236 9.60547 3.49025C9.79883 3.63478 9.90234 3.85353 9.89062 4.08595L9.70312 7.96095H15.8438C16.1914 8.17384 16.4062 8.53322 16.4062 8.90626C16.4062 9.22853 16.2656 9.53322 16.0234 9.74611Z"
+                                    fill="#353653"
+                                  />
+                                </svg>
+                                <span class="text-sm text-brand-dark-blue"
+                                  >0</span
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="flex flex-col gap-4 border-b border-brand-gray-50 py-8 md:flex-row md:gap-6"
+                        >
+                          <div class="w-[90px] flex-shrink-0">
+                            <div
+                              class="h-[82px] w-[82px] rounded-full bg-brand-gray-light-700"
+                            ></div>
+                            <h2 class="pt-2 text-center text-base font-bold">
+                              ChanSL
+                            </h2>
+                          </div>
+                          <div class="">
+                            <ul class="flex items-center gap-1">
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star.svg"
+                                  alt="star.svg"
+                                />
+                              </li>
+                              <li>
+                                <img
+                                  src="./images/single-product/star-helf.svg"
+                                  alt="star-helf.svg"
+                                />
+                              </li>
+                            </ul>
+                            <h2 class="text-lg font-bold text-brand-dark-blue">
+                              Great Product
+                            </h2>
+                            <article class="pt-6">
+                              <datetime
+                                class="pb-3 text-sm text-brand-gray-light-900"
+                                >April 30, 2022</datetime
+                              >
+                              <p class="text-base text-brand-dark-blue">
+                                I really wasn’t a fan of this scent. It is to me
+                                that stereotypical grandma scent that people
+                                refer to with a lot of floral undertones. It’s
+                                very strong and a trigger for me as someone who
+                                gets migraines.
+                              </p>
+                            </article>
+                            <div class="flex justify-between gap-5 pt-5">
+                              <div class="flex items-center gap-3">
+                                <p class="text-sm text-brand-gray-light-900">
+                                  Share on
+                                </p>
+                                <div class="flex items-center gap-4">
+                                  <a href="#"
+                                    ><img
+                                      src="./images/facebook.svg"
+                                      alt="facebook"
+                                  /></a>
+                                  <a href="#"
+                                    ><img
+                                      src="./images/twitter.svg"
+                                      alt="twitter"
+                                  /></a>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="flex w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full bg-brand-gray-50 px-5 py-3"
+                              >
+                                <p class="text-sm text-brand-dark-blue">
+                                  Helpful ?
+                                </p>
+                                <svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M17.3027 10.4238C17.6309 9.99025 17.8125 9.459 17.8125 8.90626C17.8125 8.02931 17.3223 7.19923 16.5332 6.73634C16.3301 6.61719 16.0988 6.55448 15.8633 6.5547H11.1797L11.2969 4.15431C11.3242 3.57423 11.1191 3.02345 10.7207 2.60353C10.5252 2.39655 10.2893 2.23188 10.0276 2.11967C9.76588 2.00747 9.48395 1.95013 9.19922 1.95119C8.18359 1.95119 7.28516 2.63478 7.01563 3.6133L5.33789 9.68751H2.8125C2.4668 9.68751 2.1875 9.96681 2.1875 10.3125V17.4219C2.1875 17.7676 2.4668 18.0469 2.8125 18.0469H14.5566C14.7363 18.0469 14.9121 18.0117 15.0742 17.9414C16.0039 17.5449 16.6035 16.6367 16.6035 15.6289C16.6035 15.3828 16.5684 15.1406 16.498 14.9063C16.8262 14.4727 17.0078 13.9414 17.0078 13.3887C17.0078 13.1426 16.9727 12.9004 16.9023 12.666C17.2305 12.2324 17.4121 11.7012 17.4121 11.1485C17.4082 10.9024 17.373 10.6582 17.3027 10.4238V10.4238ZM3.59375 16.6406V11.0938H5.17578V16.6406H3.59375ZM16.0234 9.74611L15.5957 10.1172L15.8672 10.6133C15.9566 10.7767 16.003 10.9602 16.002 11.1465C16.002 11.4688 15.8613 11.7754 15.6191 11.9863L15.1914 12.3574L15.4629 12.8535C15.5523 13.0169 15.5987 13.2004 15.5977 13.3867C15.5977 13.709 15.457 14.0156 15.2148 14.2266L14.7871 14.5977L15.0586 15.0938C15.148 15.2572 15.1944 15.4407 15.1934 15.627C15.1934 16.0645 14.9355 16.459 14.5371 16.6387H6.42578V11.0313L8.36914 3.99025C8.41925 3.80978 8.52682 3.65056 8.67555 3.53673C8.82428 3.42289 9.00607 3.36063 9.19336 3.35939C9.3418 3.35939 9.48828 3.40236 9.60547 3.49025C9.79883 3.63478 9.90234 3.85353 9.89062 4.08595L9.70312 7.96095H15.8438C16.1914 8.17384 16.4062 8.53322 16.4062 8.90626C16.4062 9.22853 16.2656 9.53322 16.0234 9.74611Z"
+                                    fill="#353653"
+                                  />
+                                </svg>
+                                <span class="text-sm text-brand-dark-blue"
+                                  >0</span
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <h2
+                        class="pb-1 text-[22px] font-bold text-brand-dark-blue"
+                      >
+                        Leave feedback about this
+                      </h2>
+                      <h3 class="text-base text-brand-dark-blue">
+                        Your email address will not be published.
+                      </h3>
+                      <div class="w-[200px] max-w-full space-y-1 py-6">
+                        <div class="flex items-center justify-between gap-3">
+                          <p class="text-base text-brand-dark-blue">Price</p>
+                          <ul class="flex flex-shrink-0 items-center gap-1">
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                          <p class="text-base text-brand-dark-blue">Quality</p>
+                          <ul class="flex flex-shrink-0 items-center gap-1">
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                          <p class="text-base text-brand-dark-blue">Service</p>
+                          <ul class="flex flex-shrink-0 items-center gap-1">
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="flex flex-shrink-0 items-center justify-between"
+                        >
+                          <p class="text-base text-brand-dark-blue">Delivery</p>
+                          <ul class="flex flex-shrink-0 items-center gap-1">
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="./images/star-blank.svg"
+                                alt="star-blank.svg"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="w-[610px] max-w-full space-y-4">
+                        <div class="">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                          />
+                        </div>
+                        <div class="">
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                          />
+                        </div>
+                        <div class="">
+                          <input
+                            type="text"
+                            name="title"
+                            placeholder="Review Title"
+                            class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                          />
+                        </div>
+                        <div class="">
+                          <textarea
+                            class="w-full resize-none border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                            name="details"
+                            placeholder="Describe your review"
+                            id=""
+                            cols="30"
+                            rows="6"
+                          ></textarea>
+                        </div>
+                        <button
+                          class="inline-block w-[190px] bg-brand-dark-blue py-3 text-center text-base font-medium text-white"
+                          type="button"
+                        >
+                          Submit
+                        </button>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end accordion area-->
+        <!-- start coding for More From This Brand -->
+        <section class="py-8 pl-4 md:py-14 md:px-4">
+          <div class="container mx-auto">
+            <h2 class="w-full pb-10 text-center text-[28px] font-bold">
+              More From This Brand
+            </h2>
+            <div class="product-slider">
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-1.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-2.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-3.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-4.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- start coding for More From This Brand -->
+        <section class="pb-24 pl-4 md:px-4">
+          <div class="container mx-auto">
+            <h2 class="w-full pb-10 text-center text-[28px] font-bold">
+              Related Products
+            </h2>
+            <div class="product-slider">
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-1.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-2.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-3.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="w-295 max-w-full overflow-hidden bg-white">
+                <div
+                  class="relative flex h-40 items-end justify-center md:h-228"
+                >
+                  <img
+                    class="w-auto"
+                    src="./images/product/product-22.png"
+                    alt="product-4.png"
+                  />
+                  <button
+                    type="button"
+                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                  >
+                    <svg
+                      class="fill-brand-dark-blue"
+                      width="30"
+                      height="26"
+                      viewBox="0 0 30 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
+                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                  <a href="#"
+                    ><h2
+                      class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
+                    >
+                      Aroub Perfume Toby Rose - Eau de Perfume
+                    </h2></a
+                  >
+                </div>
+                <div
+                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                >
+                  <div class="pl-2 md:pl-4">
+                    <div
+                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                    >
+                      <p class="font-medium text-brand-pink">SAR 111.69</p>
+                      <p class="text-sm text-brand-gray-light-900 line-through">
+                        SAR 111.69
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                    <span>-75%</span>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    type="button"
+                    class="w-full bg-brand-dark-blue py-3 px-2 font-medium text-white transition-all duration-200 hover:bg-brand-pink hover:text-white focus:outline-none"
+                  >
+                    Add to cart
+                  </button>
                 </div>
               </div>
             </div>

@@ -144,11 +144,15 @@ $(function () {
       infinite: false,
       slidesToShow: 4,
       slidesToScroll: 1,
+      autoplay: {
+        delay: 5000,
+      },
       responsive: [
         {
           breakpoint: 1279,
           settings: {
             slidesToShow: 3,
+            autoplay: false
           },
         },
         {
@@ -302,11 +306,13 @@ $(function () {
     $(this).toggleClass("active-menu");
     $(this).find(".account-info-child").slideToggle();
   });
+  
   /**start coding for show dashboard menu menu */
   $(document).on("click", ".dashboard--menu", function () {
     $(".dashboard").removeClass("translate-x-[100%]");
     $("body").addClass("overflow-hidden");
   });
+
   $(document).on("click", ".back-dashboard", function () {
     $(".dashboard").addClass("translate-x-[100%]");
     $("body").removeClass("overflow-hidden");
