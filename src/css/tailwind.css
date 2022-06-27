@@ -68,6 +68,9 @@
   .showcase .slick-slide{
     @apply !w-auto
   }
+   .showcase .slick-slide:first-child{
+    @apply pl-2.5
+  }
   .showcase .slick-slide:first-child .item{
         @apply !pl-0
   }
@@ -121,7 +124,10 @@
   }
 }
  
- 
+.jq-star-svg {
+	width: 18px;
+	height: 18px;
+}
  
 
   

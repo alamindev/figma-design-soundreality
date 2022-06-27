@@ -2157,7 +2157,7 @@
         <section class="bg-white px-4 pb-10 pt-5 md:pb-14 xl:pb-20">
           <div class="container mx-auto">
             <div class="flex flex-col items-start gap-10 lg:flex-row xl:gap-32">
-              <div class="hidden w-full gap-8 lg:flex xl:gap-24">
+              <div class="hidden w-full gap-5 lg:flex">
                 <div class="">
                   <figure>
                     <img
@@ -2197,8 +2197,9 @@
                 <div
                   class="!flex w-full items-center justify-center bg-brand-gray py-10 px-5"
                 >
-                  <figure>
+                  <figure class="w-full">
                     <img
+                      class="w-full"
                       src="./images/product/product-24.png"
                       alt="product 4"
                     />
@@ -3253,145 +3254,21 @@
                       <div class="w-[200px] max-w-full space-y-1 py-6">
                         <div class="flex items-center justify-between gap-3">
                           <p class="text-base text-brand-dark-blue">Price</p>
-                          <ul class="flex flex-shrink-0 items-center gap-1">
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                          </ul>
+                          <div class="my-rating flex"></div>
                         </div>
                         <div class="flex items-center justify-between gap-3">
                           <p class="text-base text-brand-dark-blue">Quality</p>
-                          <ul class="flex flex-shrink-0 items-center gap-1">
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                          </ul>
+                          <div class="my-rating flex"></div>
                         </div>
                         <div class="flex items-center justify-between gap-3">
                           <p class="text-base text-brand-dark-blue">Service</p>
-                          <ul class="flex flex-shrink-0 items-center gap-1">
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                          </ul>
+                          <div class="my-rating flex"></div>
                         </div>
                         <div
                           class="flex flex-shrink-0 items-center justify-between"
                         >
                           <p class="text-base text-brand-dark-blue">Delivery</p>
-                          <ul class="flex flex-shrink-0 items-center gap-1">
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="./images/star-blank.svg"
-                                alt="star-blank.svg"
-                              />
-                            </li>
-                          </ul>
+                          <div class="my-rating flex"></div>
                         </div>
                       </div>
                       <div class="w-[610px] max-w-full space-y-4">
@@ -3452,57 +3329,58 @@
             </h2>
             <div class="product-slider">
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-1.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3515,57 +3393,58 @@
                 </div>
               </div>
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-2.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3578,57 +3457,58 @@
                 </div>
               </div>
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-3.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3641,57 +3521,58 @@
                 </div>
               </div>
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-4.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3714,57 +3595,58 @@
             </h2>
             <div class="product-slider">
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-1.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3777,57 +3659,58 @@
                 </div>
               </div>
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-2.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3840,57 +3723,58 @@
                 </div>
               </div>
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-3.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3903,57 +3787,58 @@
                 </div>
               </div>
               <div class="w-295 max-w-full overflow-hidden bg-white">
-                <div
-                  class="relative flex h-40 items-end justify-center md:h-228"
-                >
-                  <img
-                    class="w-auto"
-                    src="./images/product/product-22.png"
-                    alt="product-4.png"
-                  />
+                <div class="relative w-full">
+                  <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="absolute top-8 right-4 border-none bg-transparent focus:outline-none"
+                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
-                      class="fill-brand-dark-blue"
-                      width="30"
-                      height="26"
-                      viewBox="0 0 30 26"
+                      class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                      viewBox="-1 0 35 30"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
+                        d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
                       />
                     </svg>
                   </button>
-                </div>
-                <div class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24">
-                  <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
-                  <a href="#"
-                    ><h2
+                  <div class="flex h-40 items-end justify-center md:h-228">
+                    <img
+                      class="w-auto"
+                      src="./images/product/product-22.png"
+                      alt="product-22.png"
+                    />
+                  </div>
+                  <div
+                    class="pl-2 pr-4 pt-3 md:pl-4 md:pr-10 lg:pr-20 xl:pr-24"
+                  >
+                    <h3 class="pb-2 text-brand-gray-light-900">Aroub</h3>
+                    <h2
                       class="text-sm leading-[1.5] text-brand-dark-blue md:text-base"
                     >
                       Aroub Perfume Toby Rose - Eau de Perfume
-                    </h2></a
-                  >
-                </div>
-                <div
-                  class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
-                >
-                  <div class="pl-2 md:pl-4">
-                    <div
-                      class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
-                    >
-                      <p class="font-medium text-brand-pink">SAR 111.69</p>
-                      <p class="text-sm text-brand-gray-light-900 line-through">
-                        SAR 111.69
-                      </p>
-                    </div>
+                    </h2>
                   </div>
-                  <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
-                    <span>-75%</span>
+                  <div
+                    class="flex items-end justify-between pb-5 pt-3 md:gap-3 md:pb-8 lg:gap-12"
+                  >
+                    <div class="pl-2 md:pl-4">
+                      <div
+                        class="flex flex-col pt-2 lg:flex-row lg:items-center lg:gap-5"
+                      >
+                        <p class="font-medium text-brand-pink">SAR 111.69</p>
+                        <p
+                          class="text-sm text-brand-gray-light-900 line-through"
+                        >
+                          SAR 111.69
+                        </p>
+                      </div>
+                    </div>
+                    <div class="bg-brand-pink px-1.5 py-1 text-xs text-white">
+                      <span>-75%</span>
+                    </div>
                   </div>
                 </div>
                 <div class="">
@@ -3988,9 +3873,9 @@
             <div
               class="flex w-full flex-col gap-10 md:flex-row md:items-center md:justify-between"
             >
-              <div class="flex items-center gap-3">
+              <a href="tel:123 4567 890" class="group flex items-center gap-3">
                 <div
-                  class="flex h-[60px] w-[60px] flex-shrink-0 items-center justify-center rounded-full bg-brand-pink p-3"
+                  class="flex h-[60px] w-[60px] flex-shrink-0 items-center justify-center rounded-full bg-brand-pink p-3 transition-all group-hover:bg-brand-pink-dark"
                 >
                   <svg
                     width="32"
@@ -4009,10 +3894,10 @@
                   <h3 class="font-bold text-white">Talk to Us</h3>
                   <p class="text-white">123 4567 890</p>
                 </div>
-              </div>
-              <div class="flex items-center gap-3">
+              </a>
+              <a href="sms:+123 4567 890" class="group flex items-center gap-3">
                 <div
-                  class="flex h-[60px] w-[60px] flex-shrink-0 items-center justify-center rounded-full bg-brand-pink p-3"
+                  class="flex h-[60px] w-[60px] flex-shrink-0 items-center justify-center rounded-full bg-brand-pink p-3 transition-all group-hover:bg-brand-pink-dark"
                 >
                   <svg
                     width="33"
@@ -4031,10 +3916,13 @@
                   <h3 class="font-bold text-white">Write to Us</h3>
                   <p class="text-white">123 4567 890</p>
                 </div>
-              </div>
-              <div class="flex items-center gap-3">
+              </a>
+              <a
+                href="mailto:help@sabbar.com"
+                class="group flex items-center gap-3"
+              >
                 <div
-                  class="flex h-[60px] w-[60px] flex-shrink-0 items-center justify-center rounded-full bg-brand-pink p-3"
+                  class="flex h-[60px] w-[60px] flex-shrink-0 items-center justify-center rounded-full bg-brand-pink p-3 transition-all group-hover:bg-brand-pink-dark"
                 >
                   <svg
                     width="32"
@@ -4053,7 +3941,7 @@
                   <h3 class="font-bold text-white">Help Centre</h3>
                   <p class="text-white">help@sabbar.com</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           <div
@@ -4062,11 +3950,41 @@
             <div class="w-1/2 md:w-auto">
               <h2 class="pb-3 font-bold uppercase text-white">About Sabbar</h2>
               <ul class="flex flex-col gap-2">
-                <li><a href="#" class="text-white">About Us</a></li>
-                <li><a href="#" class="text-white">Contact us</a></li>
-                <li><a href="#" class="text-white">Partnership</a></li>
-                <li><a href="#" class="text-white">Careers</a></li>
-                <li><a href="#" class="text-white">Store Locator</a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Contact us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Partnership</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Store Locator</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="">
@@ -4074,13 +3992,41 @@
                 Important Links
               </h2>
               <ul class="flex flex-col gap-2">
-                <li><a href="#" class="text-white">Shipping</a></li>
                 <li>
-                  <a href="#" class="text-white">Return & refund policy</a>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Shipping</a
+                  >
                 </li>
-                <li><a href="#" class="text-white">Terms & Conditions</a></li>
-                <li><a href="#" class="text-white">Privacy Policy</a></li>
-                <li><a href="#" class="text-white">Help Centre</a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Return & refund policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    >Help Centre</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="w-full md:w-auto">
@@ -4101,7 +4047,7 @@
                     />
                     <button
                       type="button"
-                      class="bg-brand-pink px-5 py-3 text-white transition-all duration-200 hover:bg-brand-pink"
+                      class="bg-brand-pink px-5 py-3 text-white transition-all duration-200 hover:bg-brand-pink-dark"
                     >
                       Subscribe
                     </button>
@@ -4110,7 +4056,7 @@
                 <div class="flex items-center gap-8 pt-5">
                   <a href="#" target="_blank">
                     <svg
-                      class="fill-brand-pink"
+                      class="fill-brand-pink transition-all hover:fill-brand-pink-dark"
                       width="12"
                       height="26"
                       viewBox="0 0 12 26"
@@ -4124,7 +4070,7 @@
                   </a>
                   <a href="#" target="_blank">
                     <svg
-                      class="fill-brand-pink"
+                      class="fill-brand-pink transition-all hover:fill-brand-pink-dark"
                       width="26"
                       height="26"
                       viewBox="0 0 26 26"
@@ -4138,7 +4084,7 @@
                   </a>
                   <a href="#" target="_blank">
                     <svg
-                      class="fill-brand-pink"
+                      class="fill-brand-pink transition-all hover:fill-brand-pink-dark"
                       width="26"
                       height="26"
                       viewBox="0 0 26 26"

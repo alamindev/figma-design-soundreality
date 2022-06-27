@@ -317,4 +317,9 @@ $(function () {
     $(".dashboard").addClass("translate-x-[100%]");
     $("body").removeClass("overflow-hidden");
   });
+  $(document).on("click", ".reset", function () {
+    $(".filter").trigger("reset");
+  });
+
+
 })
