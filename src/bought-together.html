@@ -645,7 +645,7 @@
               <input
                 type="text"
                 placeholder="What are you looking for ?"
-                class="w-full rounded-md border-none bg-brand-gray-light py-3 pl-6 pr-14 text-brand-gray-dark-300 focus:ring-0"
+                class="w-full rounded border-none bg-brand-gray-100 py-3 pl-6 pr-14 text-brand-gray-dark-300 focus:ring-0"
               />
               <img
                 src="./images/search.svg"
@@ -964,7 +964,7 @@
               <div class="relative">
                 <button
                   type="button"
-                  class="dropdown-menu -mt-0.5 flex items-center gap-2 px-3 py-2"
+                  class="dropdown-menu -ml-4 -mt-0.5 flex items-center gap-2 px-3 py-2"
                 >
                   <div class="relative">
                     <svg
@@ -987,9 +987,9 @@
                       />
                     </svg>
                     <div
-                      class="absolute top-[2px] -right-[5px] flex h-[18px] w-[18px] items-center justify-center rounded-full bg-brand-pink text-white"
+                      class="countbox absolute top-[2px] -right-[5px] flex h-[18px] w-[18px] items-center justify-center rounded-full bg-brand-pink text-white"
                     >
-                      <span>2</span>
+                      <span class="count">2</span>
                     </div>
                   </div>
                   <p class="text-brand-dark-blue">Cart</p>
@@ -1022,217 +1022,228 @@
                       Want Free Shipping? Add SAR 233.55 more
                     </p>
                   </div>
-                  <div
-                    class="max-h-[48vh] divide-y divide-brand-gray-50 overflow-y-auto bg-white px-4 pb-3"
-                  >
-                    <div class="flex items-start justify-between gap-6 py-4">
-                      <div class="flex flex-col items-end justify-center">
-                        <a href="#" class="flex gap-5">
-                          <div
-                            class="flex w-16 max-w-xl flex-shrink-0 justify-center"
-                          >
-                            <img
-                              src="./images/cart-image.png"
-                              alt="cart-image.png"
-                            />
-                          </div>
-                          <div class="w-[205px] max-w-full">
-                            <h3 class="pb-1 text-brand-gray-light-900">
-                              Aroub
-                            </h3>
-                            <h2 class="leading-tight text-brand-dark-blue">
-                              Aroub Perfume Toby Rose - Eau de Perfume
-                            </h2>
-                          </div>
-                        </a>
-                        <div class="w-[205px] max-w-full flex-shrink-0">
-                          <div
-                            class="flex items-center justify-between gap-3 pt-2"
-                          >
-                            <div>
-                              <p
-                                class="font-medium leading-[1] text-brand-pink"
+                  <div class="cart-main-area">
+                    <div
+                      class="cart-items max-h-[48vh] divide-y divide-brand-gray-50 overflow-y-auto bg-white px-4 pb-3"
+                    >
+                      <div
+                        class="cart-item flex items-start justify-between gap-6 py-4"
+                      >
+                        <div class="flex flex-col items-end justify-center">
+                          <a href="#" class="flex gap-5">
+                            <div
+                              class="flex w-16 max-w-xl flex-shrink-0 justify-center"
+                            >
+                              <img
+                                src="./images/cart-image.png"
+                                alt="cart-image.png"
+                              />
+                            </div>
+                            <div class="w-[205px] max-w-full">
+                              <h3 class="pb-1 text-brand-gray-light-900">
+                                Aroub
+                              </h3>
+                              <h2 class="leading-tight text-brand-dark-blue">
+                                Aroub Perfume Toby Rose - Eau de Perfume
+                              </h2>
+                            </div>
+                          </a>
+                          <div class="w-[205px] max-w-full flex-shrink-0">
+                            <div
+                              class="flex items-center justify-between gap-3 pt-2"
+                            >
+                              <div>
+                                <p
+                                  class="font-medium leading-[1] text-brand-pink"
+                                >
+                                  SAR 111.69
+                                </p>
+                                <span
+                                  class="text-brand-gray-light-900 line-through"
+                                  >SAR 111.69</span
+                                >
+                              </div>
+                              <div
+                                class="bg-brand-pink px-[2px] py-[3px] text-xs text-white"
                               >
-                                SAR 111.69
-                              </p>
-                              <span
-                                class="text-brand-gray-light-900 line-through"
-                                >SAR 111.69</span
-                              >
+                                -75%
+                              </div>
                             </div>
                             <div
-                              class="bg-brand-pink px-[2px] py-[3px] text-xs text-white"
+                              class="increment-decrement relative flex pt-2.5"
                             >
-                              -75%
+                              <button
+                                type="button"
+                                class="decrement-btn border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
+                              >
+                                -
+                              </button>
+                              <input
+                                type="text"
+                                value="1"
+                                class="qty-input w-12 border-y border-x-0 border-brand-gray-light-200 px-4 py-2 text-center text-brand-dark-blue focus:border-brand-gray-light-200 focus:outline-none focus:ring-0"
+                              />
+                              <button
+                                type="button"
+                                class="increment-btn border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
+                              >
+                                +
+                              </button>
                             </div>
                           </div>
-                          <div class="relative flex pt-2.5">
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
+                        </div>
+                        <div class="flex-shrink-0">
+                          <button
+                            type="button"
+                            class="delete-cart-data border-0 bg-transparent focus:outline-none"
+                          >
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              -
-                            </button>
-                            <input
-                              type="text"
-                              value="1"
-                              class="w-12 border-y border-x-0 border-brand-gray-light-200 px-4 py-2 text-center text-brand-dark-blue focus:border-brand-gray-light-200 focus:outline-none focus:ring-0"
-                            />
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
-                            >
-                              +
-                            </button>
-                          </div>
+                              <path
+                                d="M18.0934 22.6668H5.90675C5.65021 22.6608 5.39738 22.6042 5.1627 22.5004C4.92803 22.3966 4.7161 22.2476 4.53903 22.0619C4.36197 21.8761 4.22324 21.6573 4.13076 21.418C4.03829 21.1786 3.99388 20.9234 4.00008 20.6668V7.48682H5.33342V20.6668C5.32705 20.7483 5.33685 20.8302 5.36226 20.9079C5.38767 20.9855 5.42818 21.0574 5.48146 21.1194C5.53474 21.1813 5.59974 21.2321 5.67273 21.2689C5.74572 21.3056 5.82525 21.3276 5.90675 21.3335H18.0934C18.1749 21.3276 18.2544 21.3056 18.3274 21.2689C18.4004 21.2321 18.4654 21.1813 18.5187 21.1194C18.572 21.0574 18.6125 20.9855 18.6379 20.9079C18.6633 20.8302 18.6731 20.7483 18.6667 20.6668V7.48682H20.0001V20.6668C20.0063 20.9234 19.9619 21.1786 19.8694 21.418C19.7769 21.6573 19.6382 21.8761 19.4611 22.0619C19.2841 22.2476 19.0721 22.3966 18.8375 22.5004C18.6028 22.6042 18.35 22.6608 18.0934 22.6668Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M20.5198 5.99984H3.33317C3.15636 5.99984 2.98679 5.9296 2.86177 5.80457C2.73674 5.67955 2.6665 5.50998 2.6665 5.33317C2.6665 5.15636 2.73674 4.98679 2.86177 4.86177C2.98679 4.73674 3.15636 4.6665 3.33317 4.6665H20.5198C20.6966 4.6665 20.8662 4.73674 20.9912 4.86177C21.1163 4.98679 21.1865 5.15636 21.1865 5.33317C21.1865 5.50998 21.1163 5.67955 20.9912 5.80457C20.8662 5.9296 20.6966 5.99984 20.5198 5.99984Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M14 8.6665H15.3333V18.6665H14V8.6665Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M8.6665 8.6665H9.99984V18.6665H8.6665V8.6665Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M15.3332 3.90683H14.0665V2.66683H9.93317V3.90683H8.6665V2.66683C8.66608 2.32446 8.79736 1.99505 9.03317 1.74683C9.26898 1.49861 9.59123 1.35061 9.93317 1.3335H14.0665C14.4084 1.35061 14.7307 1.49861 14.9665 1.74683C15.2023 1.99505 15.3336 2.32446 15.3332 2.66683V3.90683Z"
+                                fill="#353653"
+                              />
+                            </svg>
+                          </button>
                         </div>
                       </div>
-                      <div class="flex-shrink-0">
-                        <button
-                          type="button"
-                          class="delete border-0 bg-transparent focus:outline-none"
-                        >
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M18.0934 22.6668H5.90675C5.65021 22.6608 5.39738 22.6042 5.1627 22.5004C4.92803 22.3966 4.7161 22.2476 4.53903 22.0619C4.36197 21.8761 4.22324 21.6573 4.13076 21.418C4.03829 21.1786 3.99388 20.9234 4.00008 20.6668V7.48682H5.33342V20.6668C5.32705 20.7483 5.33685 20.8302 5.36226 20.9079C5.38767 20.9855 5.42818 21.0574 5.48146 21.1194C5.53474 21.1813 5.59974 21.2321 5.67273 21.2689C5.74572 21.3056 5.82525 21.3276 5.90675 21.3335H18.0934C18.1749 21.3276 18.2544 21.3056 18.3274 21.2689C18.4004 21.2321 18.4654 21.1813 18.5187 21.1194C18.572 21.0574 18.6125 20.9855 18.6379 20.9079C18.6633 20.8302 18.6731 20.7483 18.6667 20.6668V7.48682H20.0001V20.6668C20.0063 20.9234 19.9619 21.1786 19.8694 21.418C19.7769 21.6573 19.6382 21.8761 19.4611 22.0619C19.2841 22.2476 19.0721 22.3966 18.8375 22.5004C18.6028 22.6042 18.35 22.6608 18.0934 22.6668Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M20.5198 5.99984H3.33317C3.15636 5.99984 2.98679 5.9296 2.86177 5.80457C2.73674 5.67955 2.6665 5.50998 2.6665 5.33317C2.6665 5.15636 2.73674 4.98679 2.86177 4.86177C2.98679 4.73674 3.15636 4.6665 3.33317 4.6665H20.5198C20.6966 4.6665 20.8662 4.73674 20.9912 4.86177C21.1163 4.98679 21.1865 5.15636 21.1865 5.33317C21.1865 5.50998 21.1163 5.67955 20.9912 5.80457C20.8662 5.9296 20.6966 5.99984 20.5198 5.99984Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M14 8.6665H15.3333V18.6665H14V8.6665Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M8.6665 8.6665H9.99984V18.6665H8.6665V8.6665Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M15.3332 3.90683H14.0665V2.66683H9.93317V3.90683H8.6665V2.66683C8.66608 2.32446 8.79736 1.99505 9.03317 1.74683C9.26898 1.49861 9.59123 1.35061 9.93317 1.3335H14.0665C14.4084 1.35061 14.7307 1.49861 14.9665 1.74683C15.2023 1.99505 15.3336 2.32446 15.3332 2.66683V3.90683Z"
-                              fill="#353653"
-                            />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="flex items-start justify-between gap-6 py-4">
-                      <div class="flex flex-col items-end justify-center">
-                        <a href="#" class="flex gap-5">
-                          <div
-                            class="flex w-16 max-w-xl flex-shrink-0 justify-center"
-                          >
-                            <img
-                              src="./images/cart-image.png"
-                              alt="cart-image.png"
-                            />
-                          </div>
-                          <div class="w-[205px] max-w-full">
-                            <h3 class="pb-1 text-brand-gray-light-900">
-                              Aroub
-                            </h3>
-                            <h2 class="leading-tight text-brand-dark-blue">
-                              Aroub Perfume Toby Rose - Eau de Perfume
-                            </h2>
-                          </div>
-                        </a>
-                        <div class="w-[205px] max-w-full flex-shrink-0">
-                          <div
-                            class="flex items-center justify-between gap-3 pt-2"
-                          >
-                            <div>
-                              <p
-                                class="font-medium leading-[1] text-brand-pink"
+                      <div
+                        class="cart-item flex items-start justify-between gap-6 py-4"
+                      >
+                        <div class="flex flex-col items-end justify-center">
+                          <a href="#" class="flex gap-5">
+                            <div
+                              class="flex w-16 max-w-xl flex-shrink-0 justify-center"
+                            >
+                              <img
+                                src="./images/cart-image.png"
+                                alt="cart-image.png"
+                              />
+                            </div>
+                            <div class="w-[205px] max-w-full">
+                              <h3 class="pb-1 text-brand-gray-light-900">
+                                Aroub
+                              </h3>
+                              <h2 class="leading-tight text-brand-dark-blue">
+                                Aroub Perfume Toby Rose - Eau de Perfume
+                              </h2>
+                            </div>
+                          </a>
+                          <div class="w-[205px] max-w-full flex-shrink-0">
+                            <div
+                              class="flex items-center justify-between gap-3 pt-2"
+                            >
+                              <div>
+                                <p
+                                  class="font-medium leading-[1] text-brand-pink"
+                                >
+                                  SAR 111.69
+                                </p>
+                                <span
+                                  class="text-brand-gray-light-900 line-through"
+                                  >SAR 111.69</span
+                                >
+                              </div>
+                              <div
+                                class="bg-brand-pink px-[2px] py-[3px] text-xs text-white"
                               >
-                                SAR 111.69
-                              </p>
-                              <span
-                                class="text-brand-gray-light-900 line-through"
-                                >SAR 111.69</span
-                              >
+                                -75%
+                              </div>
                             </div>
                             <div
-                              class="bg-brand-pink px-[2px] py-[3px] text-xs text-white"
+                              class="increment-decrement relative flex pt-2.5"
                             >
-                              -75%
+                              <button
+                                type="button"
+                                class="decrement-btn border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
+                              >
+                                -
+                              </button>
+                              <input
+                                type="text"
+                                value="1"
+                                class="qty-input w-12 border-y border-x-0 border-brand-gray-light-200 px-4 py-2 text-center text-brand-dark-blue focus:border-brand-gray-light-200 focus:outline-none focus:ring-0"
+                              />
+                              <button
+                                type="button"
+                                class="increment-btn border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
+                              >
+                                +
+                              </button>
                             </div>
                           </div>
-                          <div class="relative flex pt-2.5">
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
+                        </div>
+                        <div class="flex-shrink-0">
+                          <button
+                            type="button"
+                            class="delete-cart-data border-0 bg-transparent focus:outline-none"
+                          >
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                              -
-                            </button>
-                            <input
-                              type="text"
-                              value="1"
-                              class="w-12 border-y border-x-0 border-brand-gray-light-200 px-4 py-2 text-center text-brand-dark-blue focus:border-brand-gray-light-200 focus:outline-none focus:ring-0"
-                            />
-                            <button
-                              type="button"
-                              class="border border-brand-gray-light-200 px-3 font-medium text-brand-gray-light-900"
-                            >
-                              +
-                            </button>
-                          </div>
+                              <path
+                                d="M18.0934 22.6668H5.90675C5.65021 22.6608 5.39738 22.6042 5.1627 22.5004C4.92803 22.3966 4.7161 22.2476 4.53903 22.0619C4.36197 21.8761 4.22324 21.6573 4.13076 21.418C4.03829 21.1786 3.99388 20.9234 4.00008 20.6668V7.48682H5.33342V20.6668C5.32705 20.7483 5.33685 20.8302 5.36226 20.9079C5.38767 20.9855 5.42818 21.0574 5.48146 21.1194C5.53474 21.1813 5.59974 21.2321 5.67273 21.2689C5.74572 21.3056 5.82525 21.3276 5.90675 21.3335H18.0934C18.1749 21.3276 18.2544 21.3056 18.3274 21.2689C18.4004 21.2321 18.4654 21.1813 18.5187 21.1194C18.572 21.0574 18.6125 20.9855 18.6379 20.9079C18.6633 20.8302 18.6731 20.7483 18.6667 20.6668V7.48682H20.0001V20.6668C20.0063 20.9234 19.9619 21.1786 19.8694 21.418C19.7769 21.6573 19.6382 21.8761 19.4611 22.0619C19.2841 22.2476 19.0721 22.3966 18.8375 22.5004C18.6028 22.6042 18.35 22.6608 18.0934 22.6668Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M20.5198 5.99984H3.33317C3.15636 5.99984 2.98679 5.9296 2.86177 5.80457C2.73674 5.67955 2.6665 5.50998 2.6665 5.33317C2.6665 5.15636 2.73674 4.98679 2.86177 4.86177C2.98679 4.73674 3.15636 4.6665 3.33317 4.6665H20.5198C20.6966 4.6665 20.8662 4.73674 20.9912 4.86177C21.1163 4.98679 21.1865 5.15636 21.1865 5.33317C21.1865 5.50998 21.1163 5.67955 20.9912 5.80457C20.8662 5.9296 20.6966 5.99984 20.5198 5.99984Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M14 8.6665H15.3333V18.6665H14V8.6665Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M8.6665 8.6665H9.99984V18.6665H8.6665V8.6665Z"
+                                fill="#353653"
+                              />
+                              <path
+                                d="M15.3332 3.90683H14.0665V2.66683H9.93317V3.90683H8.6665V2.66683C8.66608 2.32446 8.79736 1.99505 9.03317 1.74683C9.26898 1.49861 9.59123 1.35061 9.93317 1.3335H14.0665C14.4084 1.35061 14.7307 1.49861 14.9665 1.74683C15.2023 1.99505 15.3336 2.32446 15.3332 2.66683V3.90683Z"
+                                fill="#353653"
+                              />
+                            </svg>
+                          </button>
                         </div>
                       </div>
-                      <div class="flex-shrink-0">
-                        <button
-                          type="button"
-                          class="delete border-0 bg-transparent focus:outline-none"
-                        >
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M18.0934 22.6668H5.90675C5.65021 22.6608 5.39738 22.6042 5.1627 22.5004C4.92803 22.3966 4.7161 22.2476 4.53903 22.0619C4.36197 21.8761 4.22324 21.6573 4.13076 21.418C4.03829 21.1786 3.99388 20.9234 4.00008 20.6668V7.48682H5.33342V20.6668C5.32705 20.7483 5.33685 20.8302 5.36226 20.9079C5.38767 20.9855 5.42818 21.0574 5.48146 21.1194C5.53474 21.1813 5.59974 21.2321 5.67273 21.2689C5.74572 21.3056 5.82525 21.3276 5.90675 21.3335H18.0934C18.1749 21.3276 18.2544 21.3056 18.3274 21.2689C18.4004 21.2321 18.4654 21.1813 18.5187 21.1194C18.572 21.0574 18.6125 20.9855 18.6379 20.9079C18.6633 20.8302 18.6731 20.7483 18.6667 20.6668V7.48682H20.0001V20.6668C20.0063 20.9234 19.9619 21.1786 19.8694 21.418C19.7769 21.6573 19.6382 21.8761 19.4611 22.0619C19.2841 22.2476 19.0721 22.3966 18.8375 22.5004C18.6028 22.6042 18.35 22.6608 18.0934 22.6668Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M20.5198 5.99984H3.33317C3.15636 5.99984 2.98679 5.9296 2.86177 5.80457C2.73674 5.67955 2.6665 5.50998 2.6665 5.33317C2.6665 5.15636 2.73674 4.98679 2.86177 4.86177C2.98679 4.73674 3.15636 4.6665 3.33317 4.6665H20.5198C20.6966 4.6665 20.8662 4.73674 20.9912 4.86177C21.1163 4.98679 21.1865 5.15636 21.1865 5.33317C21.1865 5.50998 21.1163 5.67955 20.9912 5.80457C20.8662 5.9296 20.6966 5.99984 20.5198 5.99984Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M14 8.6665H15.3333V18.6665H14V8.6665Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M8.6665 8.6665H9.99984V18.6665H8.6665V8.6665Z"
-                              fill="#353653"
-                            />
-                            <path
-                              d="M15.3332 3.90683H14.0665V2.66683H9.93317V3.90683H8.6665V2.66683C8.66608 2.32446 8.79736 1.99505 9.03317 1.74683C9.26898 1.49861 9.59123 1.35061 9.93317 1.3335H14.0665C14.4084 1.35061 14.7307 1.49861 14.9665 1.74683C15.2023 1.99505 15.3336 2.32446 15.3332 2.66683V3.90683Z"
-                              fill="#353653"
-                            />
-                          </svg>
-                        </button>
-                      </div>
                     </div>
+                    <div class="bg-brand-gray-light-100 px-4 py-4">
+                      <p class="font-bold text-brand-dark-blue">
+                        Total : <span class="count">2</span> item(s) - SAR
+                        117.60
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="w-full bg-brand-dark-blue px-4 py-3 font-medium uppercase text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none"
+                    >
+                      Confirm Order
+                    </button>
                   </div>
-                  <div class="bg-brand-gray-light-100 px-4 py-4">
-                    <p class="font-bold text-brand-dark-blue">
-                      Total : 2 item(s) - SAR 117.60
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    class="w-full bg-brand-dark-blue px-4 py-3 font-medium uppercase text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none"
-                  >
-                    Confirm Order
-                  </button>
                 </div>
               </div>
             </div>
@@ -2141,7 +2152,7 @@
           <input
             type="text"
             placeholder="What are you looking for ?"
-            class="w-full rounded-md border-none bg-brand-gray-light py-3 pl-6 pr-14 text-brand-gray-dark-300 focus:ring-0"
+            class="w-full rounded border-none bg-brand-gray-100 py-3 pl-6 pr-14 text-brand-gray-dark-300 focus:ring-0"
           />
           <img
             src="./images/search.svg"
@@ -2179,33 +2190,61 @@
         <section class="bg-white px-4 pb-10 pt-5 md:pb-14 xl:pb-20">
           <div class="container mx-auto">
             <div class="flex flex-col items-start gap-10 lg:flex-row xl:gap-32">
-              <div class="hidden w-full gap-5 lg:flex">
-                <div class="">
-                  <figure>
-                    <img
-                      class="w-full"
-                      src="./images/product/product-24.png"
-                      alt="product-22.png"
-                    />
-                  </figure>
+              <div
+                class="hidden w-[610px] max-w-full gap-4 overflow-hidden lg:flex xl:flex-shrink-0"
+              >
+                <div class="single-slider w-80 max-w-full xl:w-[500px]">
+                  <div
+                    class="!flex w-full items-center justify-center bg-brand-gray"
+                  >
+                    <figure>
+                      <img
+                        class="w-full"
+                        src="./images/product/product-24.png"
+                        alt="product 4"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="!flex w-full items-center justify-center bg-brand-gray"
+                  >
+                    <figure>
+                      <img
+                        class="w-full"
+                        src="./images/product/product-24.png"
+                        alt="product 4"
+                      />
+                    </figure>
+                  </div>
+                  <div
+                    class="!flex w-full items-center justify-center bg-brand-gray"
+                  >
+                    <figure>
+                      <img
+                        class="w-full"
+                        src="./images/product/product-23.png"
+                        alt="product 4"
+                      />
+                    </figure>
+                  </div>
                 </div>
                 <div class="flex-shrink-0">
                   <ul class="flex flex-col items-center justify-center gap-3">
-                    <li>
+                    <li class="thumbnail cursor-pointer" data-rel="0">
                       <img
                         class="h-[88px] w-[85px] object-cover"
-                        src="./images/product/product-22.png"
-                        alt="product-22.png"
+                        src="./images/single-product/thumbnail-1.png"
+                        alt="thumbnail-1.png"
                       />
                     </li>
-                    <li>
+                    <li class="thumbnail cursor-pointer" data-rel="1">
                       <img
                         class="h-[88px] w-[85px] object-cover"
-                        src="./images/single-product/thumbnail-4.png"
-                        alt="product-15"
+                        src="./images/single-product/thumbnail-2.png"
+                        alt="thumbnail-2.png"
                       />
                     </li>
-                    <li>
+                    <li class="thumbnail cursor-pointer" data-rel="2">
                       <img
                         class="h-[88px] w-[85px] object-cover"
                         src="./images/single-product/thumbnail-3.png"
@@ -2413,6 +2452,141 @@
                     <div class="flex w-[320px] max-w-full items-center gap-5">
                       <button
                         type="button"
+                        class="select-option-btn w-full border-none bg-brand-gray-light-900 py-2.5 text-base text-white transition-all hover:bg-brand-dark-blue hover:text-white focus:outline-none focus:ring-0"
+                      >
+                        Select an option
+                      </button>
+                      <div class="add-to-cart hidden w-full">
+                        <div class="flex w-full gap-4">
+                          <input
+                            type="text"
+                            value="1"
+                            placeholder="1"
+                            class="w-[50px] border border-brand-gray-50 py-2.5 text-center focus:ring-0"
+                          />
+                          <button
+                            type="button"
+                            class="w-full border-none bg-brand-pink px-8 py-2.5 text-base text-white transition-all duration-200 hover:bg-brand-pink-dark focus:outline-none focus:ring-0"
+                          >
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        class="lovebtn-pink inline-block flex-shrink-0 border-none bg-transparent focus:outline-none focus:ring-0"
+                      >
+                        <svg
+                          class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                          viewBox="-1 0 35 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- empty stock notify add to chart and select an option -->
+                <div class="hidden md:block">
+                  <div
+                    class="empty-stock-notify hidden w-[320px] max-w-full pt-5"
+                  >
+                    <div class="flex items-center gap-3 pb-5">
+                      <svg
+                        width="20"
+                        height="23"
+                        viewBox="0 0 20 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
+                          fill="#353653"
+                        />
+                      </svg>
+                      <p class="text-base text-brand-dark-blue">
+                        Notify me when it’s back in stock
+                      </p>
+                    </div>
+                    <div class="w-[260px] max-w-full pb-3.5">
+                      <input
+                        type="text"
+                        placeholder="Insert your email address"
+                        class="w-full border border-brand-gray-50 px-3.5 py-2.5 text-base leading-[1.4] text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                      />
+                    </div>
+                    <div class="flex w-full items-center gap-5">
+                      <button
+                        type="button"
+                        class="w-full border-none bg-brand-pink px-8 py-2.5 text-base leading-[1.6] text-white transition-all duration-200 hover:bg-brand-pink-dark focus:outline-none focus:ring-0"
+                      >
+                        Notify me
+                      </button>
+                      <button
+                        type="button"
+                        class="lovebtn-pink inline-block flex-shrink-0 border-none bg-transparent focus:outline-none focus:ring-0"
+                      >
+                        <svg
+                          class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
+                          viewBox="-1 0 35 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.3413 2.57703C26.512 1.76119 25.5258 1.11352 24.4393 0.671266C23.3529 0.229008 22.1877 0.000880959 21.0107 0C18.7844 0.000355493 16.6394 0.817291 15.0004 2.28906C13.3615 0.817043 11.2164 6.83978e-05 8.99007 0C7.81169 0.00119845 6.64517 0.230022 5.55767 0.673301C4.47016 1.11658 3.48313 1.76556 2.65338 2.5829C-0.885715 6.05469 -0.884211 11.485 2.65639 14.942L15.0004 27L27.3444 14.942C30.885 11.485 30.8865 6.05469 27.3413 2.57703Z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--start coding for empty tablet bottom stock notify-->
+                <div class="lg:hidden">
+                  <div
+                    class="fixed bottom-0 left-0 right-0 z-40 w-full border-t border-brand-gray-50 bg-white px-4 py-3.5"
+                  >
+                    <div class="md:hidden">
+                      <div class="empty-stock-notify hidden w-full">
+                        <div class="flex items-center gap-3 pb-4">
+                          <svg
+                            width="20"
+                            height="23"
+                            viewBox="0 0 20 23"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
+                              fill="#353653"
+                            />
+                          </svg>
+                          <p class="text-base text-brand-dark-blue">
+                            Notify me when it’s back in stock
+                          </p>
+                        </div>
+                        <div class="w-full pb-2.5">
+                          <input
+                            type="text"
+                            placeholder="Insert your email address"
+                            class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-brand-pink-dark focus:outline-none focus:ring-0"
+                        >
+                          Notify me
+                        </button>
+                      </div>
+                    </div>
+                    <div class="tab-select-option">
+                      <button
+                        type="button"
                         class="select-option-btn w-full border-none bg-brand-gray-light-900 py-2.5 text-base text-white focus:outline-none focus:ring-0"
                       >
                         Select an option
@@ -2423,7 +2597,7 @@
                             type="text"
                             value="1"
                             placeholder="1"
-                            class="w-[50px] border border-brand-gray-50 py-3.5 text-center focus:ring-0"
+                            class="w-[82px] border border-brand-gray-50 py-3.5 text-center focus:ring-0"
                           />
                           <button
                             type="button"
@@ -2433,23 +2607,6 @@
                           </button>
                         </div>
                       </div>
-                      <button
-                        type="button"
-                        class="inline-block flex-shrink-0 border-none bg-transparent focus:outline-none focus:ring-0"
-                      >
-                        <svg
-                          width="30"
-                          height="26"
-                          viewBox="0 0 30 26"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
-                            fill="#353653"
-                          />
-                        </svg>
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -2492,7 +2649,7 @@
 
                     <button
                       type="button"
-                      class="mb-6 w-full bg-brand-dark-blue px-5 py-3 text-center text-white"
+                      class="tranistion-all mb-6 w-full bg-brand-dark-blue px-5 py-3 text-center text-white duration-200 hover:bg-brand-pink"
                     >
                       Add all to cart
                     </button>
@@ -2546,131 +2703,7 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- end Frequently Bought Together section -->
-
-                <!-- empty stock notify add to chart and select an option -->
-                <div class="hidden md:block">
-                  <div
-                    class="empty-stock-notify hidden w-[320px] max-w-full pt-5"
-                  >
-                    <div class="flex items-center gap-3 pb-5">
-                      <svg
-                        width="20"
-                        height="23"
-                        viewBox="0 0 20 23"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
-                          fill="#353653"
-                        />
-                      </svg>
-                      <p class="text-base text-brand-dark-blue">
-                        Notify me when it’s back in stock
-                      </p>
-                    </div>
-                    <div class="w-[260px] max-w-full pb-3.5">
-                      <input
-                        type="text"
-                        placeholder="Insert your email address"
-                        class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
-                      />
-                    </div>
-                    <div class="flex w-full items-center gap-5">
-                      <button
-                        type="button"
-                        class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
-                      >
-                        Notify me
-                      </button>
-                      <button
-                        type="button"
-                        class="inline-block flex-shrink-0 border-none bg-transparent focus:outline-none focus:ring-0"
-                      >
-                        <svg
-                          width="30"
-                          height="26"
-                          viewBox="0 0 30 26"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M15.0002 25.3484L14.4962 24.9284C3.66021 16.1084 0.720215 13.0004 0.720215 7.96039C0.720215 3.76039 4.08021 0.400391 8.28021 0.400391C11.7242 0.400391 13.6562 2.33239 15.0002 3.84439C16.3442 2.33239 18.2762 0.400391 21.7202 0.400391C25.9202 0.400391 29.2802 3.76039 29.2802 7.96039C29.2802 13.0004 26.3402 16.1084 15.5042 24.9284L15.0002 25.3484ZM8.28021 2.08039C5.00421 2.08039 2.40021 4.68439 2.40021 7.96039C2.40021 12.2444 5.08821 15.1004 15.0002 23.1644C24.9122 15.1004 27.6002 12.2444 27.6002 7.96039C27.6002 4.68439 24.9962 2.08039 21.7202 2.08039C18.7802 2.08039 17.1842 3.84439 15.9242 5.27239L15.0002 6.36439L14.0762 5.27239C12.8162 3.84439 11.2202 2.08039 8.28021 2.08039Z"
-                            fill="#353653"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <!--start coding for empty tablet bottom stock notify-->
-                <div class="lg:hidden">
-                  <div
-                    class="fixed bottom-0 left-0 right-0 z-40 w-full border-t border-brand-gray-50 bg-white px-4 py-3.5"
-                  >
-                    <div class="md:hidden">
-                      <div class="empty-stock-notify hidden w-full">
-                        <div class="flex items-center gap-3 pb-4">
-                          <svg
-                            width="20"
-                            height="23"
-                            viewBox="0 0 20 23"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M19.5303 14.4697L17.5 12.4395V9.75C17.4977 7.89138 16.8063 6.09964 15.5595 4.72124C14.3127 3.34284 12.5991 2.4757 10.75 2.2875V0.75H9.25V2.2875C7.40093 2.4757 5.68732 3.34284 4.44053 4.72124C3.19373 6.09964 2.50233 7.89138 2.5 9.75V12.4395L0.46975 14.4697C0.329088 14.6104 0.250042 14.8011 0.25 15V17.25C0.25 17.4489 0.329018 17.6397 0.46967 17.7803C0.610322 17.921 0.801088 18 1 18H6.25V18.5828C6.23369 19.5342 6.56905 20.4583 7.19184 21.1778C7.81462 21.8973 8.68102 22.3617 9.625 22.482C10.1464 22.5337 10.6728 22.4757 11.1704 22.3117C11.6681 22.1478 12.1259 21.8815 12.5144 21.53C12.9029 21.1785 13.2136 20.7495 13.4264 20.2707C13.6392 19.792 13.7494 19.2739 13.75 18.75V18H19C19.1989 18 19.3897 17.921 19.5303 17.7803C19.671 17.6397 19.75 17.4489 19.75 17.25V15C19.75 14.8011 19.6709 14.6104 19.5303 14.4697ZM12.25 18.75C12.25 19.3467 12.0129 19.919 11.591 20.341C11.169 20.7629 10.5967 21 10 21C9.40326 21 8.83097 20.7629 8.40901 20.341C7.98705 19.919 7.75 19.3467 7.75 18.75V18H12.25V18.75ZM18.25 16.5H1.75V15.3105L3.78025 13.2803C3.92091 13.1396 3.99996 12.9489 4 12.75V9.75C4 8.1587 4.63214 6.63258 5.75736 5.50736C6.88258 4.38214 8.4087 3.75 10 3.75C11.5913 3.75 13.1174 4.38214 14.2426 5.50736C15.3679 6.63258 16 8.1587 16 9.75V12.75C16 12.9489 16.0791 13.1396 16.2197 13.2803L18.25 15.3105V16.5Z"
-                              fill="#353653"
-                            />
-                          </svg>
-                          <p class="text-base text-brand-dark-blue">
-                            Notify me when it’s back in stock
-                          </p>
-                        </div>
-                        <div class="w-full pb-2.5">
-                          <input
-                            type="text"
-                            placeholder="Insert your email address"
-                            class="w-full border border-brand-gray-50 px-3.5 py-3 text-base text-brand-dark-blue placeholder:text-brand-gray-light-900 focus:border-brand-gray-50 focus:ring-0 md:px-5"
-                          />
-                        </div>
-                        <button
-                          type="button"
-                          class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
-                        >
-                          Notify me
-                        </button>
-                      </div>
-                    </div>
-                    <div class="tab-select-option">
-                      <button
-                        type="button"
-                        class="select-option-btn w-full border-none bg-brand-gray-light-900 py-2.5 text-base text-white focus:outline-none focus:ring-0"
-                      >
-                        Select an option
-                      </button>
-                      <div class="add-to-cart hidden w-full">
-                        <div class="flex w-full gap-4">
-                          <input
-                            type="text"
-                            value="1"
-                            placeholder="1"
-                            class="w-[82px] border border-brand-gray-50 py-3.5 text-center focus:ring-0"
-                          />
-                          <button
-                            type="button"
-                            class="w-full border-none bg-brand-pink px-8 py-3.5 text-base text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none focus:ring-0"
-                          >
-                            Add to Cart
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -2884,7 +2917,7 @@
                             </p>
                           </div>
                           <div
-                            class="flex items-center gap-4 rounded-full bg-brand-gray-50 py-2.5 px-5"
+                            class="flex items-center gap-4 rounded-full bg-brand-gray-50 bg-opacity-60 py-2.5 px-5"
                           >
                             <svg
                               width="26"
@@ -3000,7 +3033,7 @@
                           </h2>
                           <select
                             name="sort"
-                            class="w-[295px] max-w-full appearance-none border-0 bg-brand-gray-50 bg-[url(../images/arrow-down.svg)] bg-[length:20px_50px] bg-[right_1rem_center] bg-no-repeat py-3.5 px-5 text-brand-dark-blue"
+                            class="w-[295px] max-w-full appearance-none border-0 bg-brand-gray-50 bg-opacity-60 bg-[url(../images/arrow-down.svg)] bg-[length:20px_50px] bg-[right_1rem_center] bg-no-repeat py-3.5 px-5 text-brand-dark-blue"
                             id=""
                           >
                             <option value="recent">Recent review</option>
@@ -3090,24 +3123,26 @@
                               </div>
                               <button
                                 type="button"
-                                class="flex w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full bg-brand-gray-50 px-5 py-3"
+                                class="helpfull-btn bg-opactiy-60 group flex w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full bg-brand-gray-50 px-5 py-3"
                               >
                                 <p class="text-sm text-brand-dark-blue">
                                   Helpful ?
                                 </p>
                                 <svg
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
+                                  width="16"
+                                  class="stroke-brand-dark-blue stroke-[1.5px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink"
+                                  height="18"
+                                  viewBox="0 0 16 18"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    d="M17.3027 10.4238C17.6309 9.99025 17.8125 9.459 17.8125 8.90626C17.8125 8.02931 17.3223 7.19923 16.5332 6.73634C16.3301 6.61719 16.0988 6.55448 15.8633 6.5547H11.1797L11.2969 4.15431C11.3242 3.57423 11.1191 3.02345 10.7207 2.60353C10.5252 2.39655 10.2893 2.23188 10.0276 2.11967C9.76588 2.00747 9.48395 1.95013 9.19922 1.95119C8.18359 1.95119 7.28516 2.63478 7.01563 3.6133L5.33789 9.68751H2.8125C2.4668 9.68751 2.1875 9.96681 2.1875 10.3125V17.4219C2.1875 17.7676 2.4668 18.0469 2.8125 18.0469H14.5566C14.7363 18.0469 14.9121 18.0117 15.0742 17.9414C16.0039 17.5449 16.6035 16.6367 16.6035 15.6289C16.6035 15.3828 16.5684 15.1406 16.498 14.9063C16.8262 14.4727 17.0078 13.9414 17.0078 13.3887C17.0078 13.1426 16.9727 12.9004 16.9023 12.666C17.2305 12.2324 17.4121 11.7012 17.4121 11.1485C17.4082 10.9024 17.373 10.6582 17.3027 10.4238V10.4238ZM3.59375 16.6406V11.0938H5.17578V16.6406H3.59375ZM16.0234 9.74611L15.5957 10.1172L15.8672 10.6133C15.9566 10.7767 16.003 10.9602 16.002 11.1465C16.002 11.4688 15.8613 11.7754 15.6191 11.9863L15.1914 12.3574L15.4629 12.8535C15.5523 13.0169 15.5987 13.2004 15.5977 13.3867C15.5977 13.709 15.457 14.0156 15.2148 14.2266L14.7871 14.5977L15.0586 15.0938C15.148 15.2572 15.1944 15.4407 15.1934 15.627C15.1934 16.0645 14.9355 16.459 14.5371 16.6387H6.42578V11.0313L8.36914 3.99025C8.41925 3.80978 8.52682 3.65056 8.67555 3.53673C8.82428 3.42289 9.00607 3.36063 9.19336 3.35939C9.3418 3.35939 9.48828 3.40236 9.60547 3.49025C9.79883 3.63478 9.90234 3.85353 9.89062 4.08595L9.70312 7.96095H15.8438C16.1914 8.17384 16.4062 8.53322 16.4062 8.90626C16.4062 9.22853 16.2656 9.53322 16.0234 9.74611Z"
-                                    fill="#353653"
+                                    d="M15.3027 9.42384C15.6309 8.99025 15.8125 8.459 15.8125 7.90626C15.8125 7.02931 15.3223 6.19923 14.5332 5.73634C14.3301 5.61719 14.0988 5.55448 13.8633 5.5547H9.17969L9.29688 3.15431C9.32422 2.57423 9.11914 2.02345 8.7207 1.60353C8.52517 1.39655 8.28926 1.23188 8.02757 1.11967C7.76588 1.00747 7.48395 0.950127 7.19922 0.951186C6.18359 0.951186 5.28516 1.63478 5.01562 2.6133L3.33789 8.68751H3.33203V17.0469H12.5566C12.7363 17.0469 12.9121 17.0117 13.0742 16.9414C14.0039 16.5449 14.6035 15.6367 14.6035 14.6289C14.6035 14.3828 14.5684 14.1406 14.498 13.9063C14.8262 13.4727 15.0078 12.9414 15.0078 12.3887C15.0078 12.1426 14.9727 11.9004 14.9023 11.666C15.2305 11.2324 15.4121 10.7012 15.4121 10.1485C15.4082 9.90236 15.373 9.65822 15.3027 9.42384ZM0.1875 9.31251V16.4219C0.1875 16.7676 0.466797 17.0469 0.8125 17.0469H2.08203V8.68751H0.8125C0.466797 8.68751 0.1875 8.96681 0.1875 9.31251Z"
                                   />
                                 </svg>
-                                <span class="text-sm text-brand-dark-blue"
+
+                                <span
+                                  class="increment text-sm text-brand-dark-blue"
                                   >0</span
                                 >
                               </button>
@@ -3194,24 +3229,26 @@
                               </div>
                               <button
                                 type="button"
-                                class="flex w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full bg-brand-gray-50 px-5 py-3"
+                                class="helpfull-btn bg-opactiy-60 group flex w-[150px] flex-shrink-0 items-center justify-center gap-2 rounded-full bg-brand-gray-50 px-5 py-3"
                               >
                                 <p class="text-sm text-brand-dark-blue">
                                   Helpful ?
                                 </p>
                                 <svg
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
+                                  width="16"
+                                  class="stroke-brand-dark-blue stroke-[1.5px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink"
+                                  height="18"
+                                  viewBox="0 0 16 18"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >
                                   <path
-                                    d="M17.3027 10.4238C17.6309 9.99025 17.8125 9.459 17.8125 8.90626C17.8125 8.02931 17.3223 7.19923 16.5332 6.73634C16.3301 6.61719 16.0988 6.55448 15.8633 6.5547H11.1797L11.2969 4.15431C11.3242 3.57423 11.1191 3.02345 10.7207 2.60353C10.5252 2.39655 10.2893 2.23188 10.0276 2.11967C9.76588 2.00747 9.48395 1.95013 9.19922 1.95119C8.18359 1.95119 7.28516 2.63478 7.01563 3.6133L5.33789 9.68751H2.8125C2.4668 9.68751 2.1875 9.96681 2.1875 10.3125V17.4219C2.1875 17.7676 2.4668 18.0469 2.8125 18.0469H14.5566C14.7363 18.0469 14.9121 18.0117 15.0742 17.9414C16.0039 17.5449 16.6035 16.6367 16.6035 15.6289C16.6035 15.3828 16.5684 15.1406 16.498 14.9063C16.8262 14.4727 17.0078 13.9414 17.0078 13.3887C17.0078 13.1426 16.9727 12.9004 16.9023 12.666C17.2305 12.2324 17.4121 11.7012 17.4121 11.1485C17.4082 10.9024 17.373 10.6582 17.3027 10.4238V10.4238ZM3.59375 16.6406V11.0938H5.17578V16.6406H3.59375ZM16.0234 9.74611L15.5957 10.1172L15.8672 10.6133C15.9566 10.7767 16.003 10.9602 16.002 11.1465C16.002 11.4688 15.8613 11.7754 15.6191 11.9863L15.1914 12.3574L15.4629 12.8535C15.5523 13.0169 15.5987 13.2004 15.5977 13.3867C15.5977 13.709 15.457 14.0156 15.2148 14.2266L14.7871 14.5977L15.0586 15.0938C15.148 15.2572 15.1944 15.4407 15.1934 15.627C15.1934 16.0645 14.9355 16.459 14.5371 16.6387H6.42578V11.0313L8.36914 3.99025C8.41925 3.80978 8.52682 3.65056 8.67555 3.53673C8.82428 3.42289 9.00607 3.36063 9.19336 3.35939C9.3418 3.35939 9.48828 3.40236 9.60547 3.49025C9.79883 3.63478 9.90234 3.85353 9.89062 4.08595L9.70312 7.96095H15.8438C16.1914 8.17384 16.4062 8.53322 16.4062 8.90626C16.4062 9.22853 16.2656 9.53322 16.0234 9.74611Z"
-                                    fill="#353653"
+                                    d="M15.3027 9.42384C15.6309 8.99025 15.8125 8.459 15.8125 7.90626C15.8125 7.02931 15.3223 6.19923 14.5332 5.73634C14.3301 5.61719 14.0988 5.55448 13.8633 5.5547H9.17969L9.29688 3.15431C9.32422 2.57423 9.11914 2.02345 8.7207 1.60353C8.52517 1.39655 8.28926 1.23188 8.02757 1.11967C7.76588 1.00747 7.48395 0.950127 7.19922 0.951186C6.18359 0.951186 5.28516 1.63478 5.01562 2.6133L3.33789 8.68751H3.33203V17.0469H12.5566C12.7363 17.0469 12.9121 17.0117 13.0742 16.9414C14.0039 16.5449 14.6035 15.6367 14.6035 14.6289C14.6035 14.3828 14.5684 14.1406 14.498 13.9063C14.8262 13.4727 15.0078 12.9414 15.0078 12.3887C15.0078 12.1426 14.9727 11.9004 14.9023 11.666C15.2305 11.2324 15.4121 10.7012 15.4121 10.1485C15.4082 9.90236 15.373 9.65822 15.3027 9.42384ZM0.1875 9.31251V16.4219C0.1875 16.7676 0.466797 17.0469 0.8125 17.0469H2.08203V8.68751H0.8125C0.466797 8.68751 0.1875 8.96681 0.1875 9.31251Z"
                                   />
                                 </svg>
-                                <span class="text-sm text-brand-dark-blue"
+
+                                <span
+                                  class="increment text-sm text-brand-dark-blue"
                                   >0</span
                                 >
                               </button>
@@ -3311,7 +3348,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3375,7 +3412,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3439,7 +3476,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3503,7 +3540,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3577,7 +3614,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3641,7 +3678,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3705,7 +3742,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"
@@ -3769,7 +3806,7 @@
                   <a href="#" class="absolute inset-0 z-20"></a>
                   <button
                     type="button"
-                    class="group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
+                    class="lovebtn-pink group absolute top-1 right-2 z-30 flex h-8 w-8 items-center justify-center rounded-full border-none bg-white focus:outline-none md:top-8 md:right-3 md:h-10 md:w-10"
                   >
                     <svg
                       class="mt-1.5 ml-0.5 h-7 w-7 stroke-brand-dark-blue stroke-[2px] transition-all duration-75 group-hover:fill-brand-pink group-hover:stroke-brand-pink md:h-8 md:w-8"

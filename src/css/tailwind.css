@@ -122,6 +122,13 @@
   .account-info.active-menu svg:last-child {
     @apply rotate-180 
   }
+
+  .active-row{
+    @apply border-brand-pink text-brand-pink
+  }
+  .active-row td{
+    @apply border-brand-pink text-brand-pink border-y
+  }
 }
  
 .jq-star-svg {

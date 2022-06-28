@@ -954,16 +954,16 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   right: 0.5rem;
 }
 
-.top-8{
-  top: 2rem;
-}
-
-.right-4{
-  right: 1rem;
+.top-1{
+  top: 0.25rem;
 }
 
 .left-6{
   left: 1.5rem;
+}
+
+.right-4{
+  right: 1rem;
 }
 
 .top-2\.5{
@@ -974,12 +974,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   top: 0.5rem;
 }
 
-.top-1{
-  top: 0.25rem;
-}
-
 .top-\[50\%\]{
   top: 50%;
+}
+
+.top-8{
+  top: 2rem;
 }
 
 .z-50{
@@ -998,12 +998,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   z-index: 40;
 }
 
-.z-30{
-  z-index: 30;
-}
-
 .z-20{
   z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
 }
 
 .col-span-12{
@@ -1037,6 +1037,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   margin-left: 0.5rem;
 }
 
+.-ml-4{
+  margin-left: -1rem;
+}
+
 .-mt-0\.5{
   margin-top: -0.125rem;
 }
@@ -1059,6 +1063,22 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-1\.5{
+  margin-top: 0.375rem;
+}
+
+.ml-0\.5{
+  margin-left: 0.125rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.ml-0{
+  margin-left: 0px;
 }
 
 .mb-6{
@@ -1087,30 +1107,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .mb-8{
   margin-bottom: 2rem;
-}
-
-.mt-1\.5{
-  margin-top: 0.375rem;
-}
-
-.ml-0\.5{
-  margin-left: 0.125rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.ml-0{
-  margin-left: 0px;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.ml-10{
-  margin-left: 2.5rem;
 }
 
 .ml-\[5\.3rem\]{
@@ -1193,6 +1189,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   height: 88px;
 }
 
+.h-7{
+  height: 1.75rem;
+}
+
 .h-\[26px\]{
   height: 26px;
 }
@@ -1221,16 +1221,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   height: 16px;
 }
 
-.h-7{
-  height: 1.75rem;
-}
-
 .h-\[174px\]{
   height: 174px;
 }
 
-.max-h-\[47vh\]{
-  max-height: 47vh;
+.max-h-\[48vh\]{
+  max-height: 48vh;
 }
 
 .max-h-\[610px\]{
@@ -1243,10 +1239,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .max-h-\[calc\(100vh-160px\)\]{
   max-height: calc(100vh - 160px);
-}
-
-.max-h-\[48vh\]{
-  max-height: 48vh;
 }
 
 .w-full{
@@ -1283,6 +1275,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .w-16{
   width: 4rem;
+}
+
+.w-\[205px\]{
+  width: 205px;
 }
 
 .w-12{
@@ -1337,8 +1333,8 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   width: 50px;
 }
 
-.w-\[410px\]{
-  width: 410px;
+.w-7{
+  width: 1.75rem;
 }
 
 .w-\[260px\]{
@@ -1347,6 +1343,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .w-\[82px\]{
   width: 82px;
+}
+
+.w-\[410px\]{
+  width: 410px;
 }
 
 .w-\[26px\]{
@@ -1379,6 +1379,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .w-295{
   width: 295px;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-\[430px\]{
@@ -1425,20 +1429,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   width: 245px;
 }
 
+.w-\[285px\]{
+  width: 285px;
+}
+
 .w-\[160px\]{
   width: 160px;
-}
-
-.w-\[205px\]{
-  width: 205px;
-}
-
-.w-8{
-  width: 2rem;
-}
-
-.w-7{
-  width: 1.75rem;
 }
 
 .w-\[258px\]{
@@ -1453,8 +1449,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   width: 600px;
 }
 
-.w-\[285px\]{
-  width: 285px;
+.w-80{
+  width: 20rem;
+}
+
+.w-\[428px\]{
+  width: 428px;
 }
 
 .min-w-full{
@@ -1695,11 +1695,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-color: rgb(238 238 238 / var(--tw-divide-opacity));
 }
 
-.divide-brand-gray-light-200 > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-opacity: 1;
-  border-color: rgb(221 221 221 / var(--tw-divide-opacity));
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1708,8 +1703,8 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   overflow-y: auto;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .rounded-none{
@@ -1718,10 +1713,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded{
-  border-radius: 0.25rem;
 }
 
 .border{
@@ -1810,6 +1801,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-color: rgb(153 153 153 / var(--tw-border-opacity));
 }
 
+.border-brand-brown-light{
+  --tw-border-opacity: 1;
+  border-color: rgb(154 117 69 / var(--tw-border-opacity));
+}
+
 .border-brand-brown{
   --tw-border-opacity: 1;
   border-color: rgb(170 132 83 / var(--tw-border-opacity));
@@ -1825,9 +1821,9 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-brand-gray-light{
+.bg-brand-gray-100{
   --tw-bg-opacity: 1;
-  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+  background-color: rgb(248 247 250 / var(--tw-bg-opacity));
 }
 
 .bg-brand-gray-light-100{
@@ -1859,6 +1855,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   background-color: rgb(153 153 153 / var(--tw-bg-opacity));
 }
 
+.bg-brand-gray-light{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+}
+
 .bg-brand-gray-light-700{
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity));
@@ -1882,6 +1883,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 .bg-brand-gray-light-800{
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-60{
+  --tw-bg-opacity: 0.6;
 }
 
 .bg-\[url\(\.\.\/images\/arrow-down\.svg\)\]{
@@ -1932,6 +1937,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   fill: #AA8453;
 }
 
+.\!fill-brand-brown{
+  fill: #AA8453 !important;
+}
+
+.\!fill-brand-pink{
+  fill: #F2305F !important;
+}
+
 .stroke-brand-dark-blue{
   stroke: #353653;
 }
@@ -1940,8 +1953,20 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   stroke: #999999;
 }
 
+.\!stroke-brand-brown{
+  stroke: #AA8453 !important;
+}
+
+.\!stroke-brand-pink{
+  stroke: #F2305F !important;
+}
+
 .stroke-\[2px\]{
   stroke-width: 2px;
+}
+
+.stroke-\[1\.5px\]{
+  stroke-width: 1.5px;
 }
 
 .object-cover{
@@ -2170,16 +2195,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   padding-top: 1.25rem;
 }
 
-.pr-6{
-  padding-right: 1.5rem;
+.pt-2{
+  padding-top: 0.5rem;
 }
 
 .pt-2\.5{
   padding-top: 0.625rem;
-}
-
-.pt-2{
-  padding-top: 0.5rem;
 }
 
 .pt-4{
@@ -2238,10 +2259,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   padding-bottom: 2.5rem;
 }
 
-.pl-2{
-  padding-left: 0.5rem;
-}
-
 .pb-3\.5{
   padding-bottom: 0.875rem;
 }
@@ -2250,12 +2267,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   padding-bottom: 0.625rem;
 }
 
-.pt-6{
-  padding-top: 1.5rem;
+.pl-2{
+  padding-left: 0.5rem;
 }
 
-.pr-2{
-  padding-right: 0.5rem;
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .pb-\[14px\]{
@@ -2290,8 +2307,8 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   padding-top: 3.5rem;
 }
 
-.pl-3{
-  padding-left: 0.75rem;
+.pr-2{
+  padding-right: 0.5rem;
 }
 
 .text-left{
@@ -2386,6 +2403,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .leading-\[1\]{
   line-height: 1;
+}
+
+.leading-\[1\.4\]{
+  line-height: 1.4;
+}
+
+.leading-\[1\.6\]{
+  line-height: 1.6;
 }
 
 .leading-\[1\.5\]{
@@ -2639,6 +2664,22 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.active-row{
+  --tw-border-opacity: 1;
+  border-color: rgb(242 48 95 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(242 48 95 / var(--tw-text-opacity));
+}
+
+.active-row td{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(242 48 95 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(242 48 95 / var(--tw-text-opacity));
+}
+
 .jq-star-svg {
   width: 18px;
   height: 18px;
@@ -2873,8 +2914,9 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-color: rgb(242 48 95 / var(--tw-border-opacity));
 }
 
-.hover\:border-transparent:hover{
-  border-color: transparent;
+.hover\:border-brand-brown:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(170 132 83 / var(--tw-border-opacity));
 }
 
 .hover\:bg-brand-pink:hover{
@@ -2882,19 +2924,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   background-color: rgb(242 48 95 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-brand-dark-blue:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(53 54 83 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-brand-brown-light:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(154 117 69 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-brand-pink-dark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(208 42 82 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand-dark-blue:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 54 83 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-brand-dark:hover{
@@ -2902,16 +2939,34 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   background-color: rgb(68 68 68 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand-brown-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 117 69 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-90:hover{
   --tw-bg-opacity: 0.9;
 }
 
-.hover\:fill-brand-brown-light:hover{
-  fill: #9A7545;
+.hover\:bg-opacity-20:hover{
+  --tw-bg-opacity: 0.2;
+}
+
+.hover\:bg-opacity-80:hover{
+  --tw-bg-opacity: 0.8;
 }
 
 .hover\:fill-brand-pink-dark:hover{
   fill: #D02A52;
+}
+
+.hover\:fill-brand-brown-light:hover{
+  fill: #9A7545;
 }
 
 .hover\:font-medium:hover{
@@ -2923,14 +2978,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-brand-brown:hover{
-  --tw-text-opacity: 1;
-  color: rgb(170 132 83 / var(--tw-text-opacity));
-}
-
 .hover\:text-brand-pink:hover{
   --tw-text-opacity: 1;
   color: rgb(242 48 95 / var(--tw-text-opacity));
+}
+
+.hover\:text-brand-brown:hover{
+  --tw-text-opacity: 1;
+  color: rgb(170 132 83 / var(--tw-text-opacity));
 }
 
 .focus\:border-0:focus{
@@ -2987,11 +3042,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .group:hover .group-hover\:visible{
   visibility: visible;
-}
-
-.group:hover .group-hover\:border-y{
-  border-top-width: 1px;
-  border-bottom-width: 1px;
 }
 
 .group:hover .group-hover\:border-brand-pink{
@@ -3227,6 +3277,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     display: none;
   }
 
+  .md\:h-8{
+    height: 2rem;
+  }
+
+  .md\:h-10{
+    height: 2.5rem;
+  }
+
   .md\:h-228{
     height: 228px;
   }
@@ -3235,28 +3293,20 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     height: 18px;
   }
 
-  .md\:h-10{
-    height: 2.5rem;
-  }
-
-  .md\:h-8{
-    height: 2rem;
-  }
-
   .md\:w-auto{
     width: auto;
   }
 
-  .md\:w-\[18px\]{
-    width: 18px;
+  .md\:w-8{
+    width: 2rem;
   }
 
   .md\:w-10{
     width: 2.5rem;
   }
 
-  .md\:w-8{
-    width: 2rem;
+  .md\:w-\[18px\]{
+    width: 18px;
   }
 
   .md\:w-6\/12{
@@ -3552,6 +3602,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     padding-top: 0.5rem;
   }
 
+  .lg\:pr-10{
+    padding-right: 2.5rem;
+  }
+
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -3596,6 +3650,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     width: 255px;
   }
 
+  .xl\:w-\[428px\]{
+    width: 428px;
+  }
+
+  .xl\:w-\[500px\]{
+    width: 500px;
+  }
+
   .xl\:flex-shrink-0{
     flex-shrink: 0;
   }
@@ -3624,6 +3686,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     gap: 6rem;
   }
 
+  .xl\:gap-28{
+    gap: 7rem;
+  }
+
   .xl\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -3639,9 +3705,9 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     padding-right: 2.5rem;
   }
 
-  .xl\:px-\[36px\]{
-    padding-left: 36px;
-    padding-right: 36px;
+  .xl\:px-\[34px\]{
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   .xl\:py-20{
@@ -3649,14 +3715,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     padding-bottom: 5rem;
   }
 
-  .xl\:px-\[34px\]{
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-
   .xl\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .xl\:px-\[36px\]{
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   .xl\:px-16{

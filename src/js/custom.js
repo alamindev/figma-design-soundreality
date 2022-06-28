@@ -317,9 +317,102 @@ $(function () {
     $(".dashboard").addClass("translate-x-[100%]");
     $("body").removeClass("overflow-hidden");
   });
+
+  // start coding for js button
   $(document).on("click", ".reset", function () {
     $(".filter").trigger("reset");
   });
 
+    // start coding for increment decrement
+    $(".increment-btn").click(function (e) {
+      e.preventDefault();
+      var inc_value = $(this).parent(".increment-decrement").find(".qty-input").val();
+      var value = parseInt(inc_value, 10);
+      value = isNaN(value) ? "0" : value;
+      if (value < 20) {
+        value++;
+       $(this).parent(".increment-decrement").find(".qty-input").val(value);
+      }
+    });
+    $(".decrement-btn").click(function (e) {
+      e.preventDefault();
+      var dec_value = $(this).parent(".increment-decrement").find(".qty-input").val();
+      var value = parseInt(dec_value, 10);
+      value = isNaN(value) ? "0" : value;
+      if (value > 1) {
+        value--;
+       $(this).parent(".increment-decrement").find(".qty-input").val(value);
+      }
+    });
+    $(document).on('click', ".delete-cart-data",function (e) {
+      e.stopPropagation(); 
+  
+        $(this).parents(".cart-item").remove();
+        if ($(".cart-items").children().length < 1) {
+          $(".cart-main-area")
+            .html("<h3 class='py-4 px-3 text-lg text-brand-pink'>Cart is empty!</h3>");
+          $(".countbox").remove();
+        }
+         $(".count").html($(".cart-items").children().length); 
+    });
+  
+  // start coding for love btn active  
+   $(document).on("click", ".lovebtn-brown", function (e) {
+     e.stopPropagation(); 
+     $(this).find("svg").toggleClass("!stroke-brand-brown !fill-brand-brown"); 
+   });
+   $(document).on("click", ".lovebtn-pink", function (e) {
+     e.stopPropagation(); 
+     $(this).find("svg").toggleClass("!stroke-brand-pink !fill-brand-pink"); 
+   });
+  // start coding for help btn active  
+   $(document).on("click", ".helpfull-btn", function (e) {
+     e.stopPropagation();
+     $(this).find("svg").toggleClass("!stroke-brand-pink !fill-brand-pink"); 
+     var incrementVal = $(this).find(".increment").text(); 
+      var value = parseInt(incrementVal, 10);
+      value = isNaN(value) ? "0" : value; 
+     if (value < 1) {
+          value++; 
+     } else if( value > 0){
+       value--; 
+     }
+         $(this).find(".increment").text(value); 
+   });
+  // start coding for dynamic button click
+   $(document).on("click", ".row-price-click", function (e) {
+     e.stopPropagation();
+     $(".row-price-click").removeClass("active-row");
+     $(".price-input").val(1);
+     $(this).addClass('active-row');
+     $(".price-input").val($(this).attr('data-price'));
+   });
+  
+  // start coding for category menu tab 
+     $(document).on("click", ".tabs-nav a", function (e) {
+       $(".tabs-nav a").removeClass("sidebar-active");
+       $(this).addClass("sidebar-active");
 
-})
+       // Display active tab
+       let currentTab = $(this).attr("data-id");
+       $(".tabs-content div").hide();
+       $('#'+currentTab).show();
+
+       return false;
+     }); 
+   
+  // image gellary
+
+	$(".single-slider").slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1, 
+    arrows: false,
+  });
+   
+    $(".thumbnail").on("click", function () {
+      $(".single-slider").slick("slickGoTo", $(this).data("rel"));
+    });
+  
+  }); 
