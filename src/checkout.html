@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invoice dashboard</title>
-    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <title>Checkout</title> 
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="bg-brand-gray text-brand-dark-blue">
-    <!-- start coding for header -->
-    <header
+     <!-- start coding for header -->
+      <header
       class="sticky top-0 z-50 border-b border-brand-gray-light-200 bg-white py-6 lg:px-4 xl:px-0"
     >
       <div class="container mx-auto">
@@ -670,6 +669,7 @@
                     <path
                       d="M11.9998 23.1998C14.9702 23.1998 17.819 22.0198 19.9194 19.9194C22.0198 17.819 23.1998 14.9702 23.1998 11.9998C23.1998 9.02938 22.0198 6.18062 19.9194 4.08021C17.819 1.9798 14.9702 0.799805 11.9998 0.799805C9.02938 0.799805 6.18062 1.9798 4.08021 4.08021C1.9798 6.18062 0.799805 9.02938 0.799805 11.9998C0.799805 14.9702 1.9798 17.819 4.08021 19.9194C6.18062 22.0198 9.02938 23.1998 11.9998 23.1998ZM11.9998 2.1998C12.9196 2.1998 13.9696 3.0258 14.8306 4.871C15.1344 5.5234 15.399 6.2738 15.6132 7.0998H8.3864C8.6006 6.2738 8.8652 5.5234 9.1704 4.871C10.0286 3.0258 11.0786 2.1998 11.9998 2.1998ZM7.9006 4.2788C7.4872 5.18434 7.16682 6.12953 6.9444 7.0998H3.5102C4.69214 5.05702 6.56952 3.50761 8.7994 2.7346C8.462 3.1966 8.161 3.7202 7.9006 4.2788ZM6.6686 8.4998C6.48741 9.65762 6.39754 10.8279 6.3998 11.9998C6.3998 13.2178 6.4936 14.3966 6.67 15.4998H2.8438C2.41684 14.3824 2.19856 13.196 2.1998 11.9998C2.1998 10.7678 2.428 9.5862 2.8438 8.4998H6.67H6.6686ZM6.9444 16.8998C7.1908 17.94 7.5142 18.8906 7.9006 19.7208C8.161 20.2794 8.462 20.803 8.7994 21.265C6.56952 20.492 4.69214 18.9426 3.5102 16.8998H6.9458H6.9444ZM8.3864 16.8998H15.6132C15.4203 17.6651 15.1579 18.4111 14.8292 19.1286C13.971 20.9738 12.921 21.7998 11.9998 21.7998C11.08 21.7998 10.03 20.9738 9.169 19.1286C8.84129 18.411 8.5798 17.665 8.3878 16.8998H8.3864ZM15.9114 15.4998H8.0882C7.89366 14.3433 7.79719 13.1725 7.7998 11.9998C7.7998 10.7636 7.902 9.5848 8.0882 8.4998H15.9114C16.0976 9.5848 16.1998 10.7636 16.1998 11.9998C16.1998 13.236 16.0976 14.4148 15.9114 15.4998ZM17.0552 16.8998H20.4894C19.3075 18.9426 17.4301 20.492 15.2002 21.265C15.5376 20.803 15.8386 20.2794 16.099 19.7208C16.4854 18.8906 16.8088 17.94 17.0552 16.8998ZM21.1572 15.4998H17.3296C17.506 14.3966 17.5998 13.2178 17.5998 11.9998C17.5998 10.7818 17.506 9.603 17.3296 8.4998H21.1558C21.5716 9.5862 21.7998 10.7678 21.7998 11.9998C21.7998 13.2318 21.5716 14.4134 21.1558 15.4998H21.1572ZM15.2002 2.7346C17.4302 3.5075 19.3076 5.05694 20.4894 7.0998H17.0538C16.8314 6.12953 16.511 5.18435 16.0976 4.2788C15.8483 3.73639 15.5473 3.21926 15.1988 2.7346H15.2002Z"
                     />
+                   <rect x="10" class="group-first:block hidden" y="10" width="4" height="4" fill="#999999"/>
                   </svg>
                   <p class="text-brand-dark-blue">En</p>
                   <svg
@@ -685,7 +685,7 @@
                       clip-rule="evenodd"
                       d="M4.976 5.07184L9.333 0.714844L9.953 1.33284L5.284 5.99984H4.666L0 1.33284L0.619 0.714844L4.976 5.07184Z"
                       fill="#353653"
-                    />
+                    /> 
                   </svg>
                 </button>
                 <div
@@ -696,7 +696,7 @@
                   >
                     <h2 class="py-4 px-4 text-[22px] font-bold">Language</h2>
                   </header>
-                  <ul class="divide-y">
+                  <ul class="">
                     <li
                       class="flex cursor-pointer items-center gap-5 py-3.5 px-4 text-brand-dark-blue transition-all duration-200 hover:bg-brand-pink hover:text-white"
                     >
@@ -830,13 +830,33 @@
                       <h3 class="font-bold text-brand-dark-blue">
                         Login with phone number
                       </h3>
-                      <div class="pt-3 pb-2">
-                        <input
-                          type="tel"
-                          placeholder="+966"
-                          id="telephone"
-                          class="focus:ouline-none border-1 left-0 w-full border-brand-gray-light-200 placeholder:text-brand-gray-light-900 focus:border-brand-gray-light-200 focus:ring-0"
-                        />
+                      <div class="pt-3 pb-2 relative phone-select-area">
+                        <div class="flex border  bg-white border-brand-gray-light-200 py-2">
+                          <div class="click-select-phone  cursor-pointer flex flex-shrink-0 items-center gap-3 px-3  border-r border-brand-gray-light-200">
+                            <img id="flug" class="w-6 h-6 rounded-full object-cover" src="./images/saudi-arabia.png" alt="saudi-arabia.png">
+                            <svg width="10" class="group-first:rotate-180 transition-all duration-200" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.976 5.07184L9.333 0.714844L9.953 1.33284L5.284 5.99984H4.666L0 1.33284L0.619 0.714844L4.976 5.07184Z" fill="#353653"/>
+                            </svg> 
+                          </div>
+                          <input
+                            type="tel"
+                            placeholder="+966"
+                            id="telephone"
+                            class="focus:ouline-none pl-8 w-full bg-transparent  placeholder:text-brand-gray-light-900  border-0 focus:ring-0"
+                          />
+                        </div> 
+                        <ul class="max-h-48 overflow-auto phone-menu translate-y-10 opacity-0 invisible transition-all absolute left-0 bg-white w-full p-2 shadow-md border border-brand-gray-light">
+<li class="flex items-center group hover:bg-brand-pink transition-all gap-3 py-3 px-4 cursor-pointer" data-flug="./images/saudi-arabia.png" data-code="+966">
+                            <img class="w-6 h-6 rounded-full object-cover" src="./images/saudi-arabia.png" alt="saudi-arabia.png">
+                            <p class="text-brand-dark-blue group-hover:text-white">Saudi aribai</p>
+                            <span class="text-sm text-brand-gray-light-200">+966</span>
+                          </li>
+                          <li class="flex items-center group hover:bg-brand-pink transition-all gap-3 py-3 px-4 cursor-pointer" data-flug="./images/Flag-United-States-of-America.jpg" data-code="+1">
+                            <img class="w-6 h-6 rounded-full object-cover" src="./images/Flag-United-States-of-America.jpg" alt="saudi-arabia.png">
+                            <p class="text-brand-dark-blue group-hover:text-white">United States</p>
+                            <span class="text-sm text-brand-gray-light-200">+1</span>
+                          </li>
+                        </ul> 
                       </div>
                       <button
                         class="w-full bg-brand-dark-blue px-4 py-3 font-medium text-white transition-all duration-200 hover:bg-opacity-90 focus:outline-none"
@@ -989,7 +1009,7 @@
                     <div
                       class="countbox absolute top-[2px] -right-[5px] flex h-[18px] w-[18px] items-center justify-center rounded-full bg-brand-pink text-white"
                     >
-                      <span class="count">2</span>
+                      <span class="count text-[10px]">05</span>
                     </div>
                   </div>
                   <p class="text-brand-dark-blue">Cart</p>
@@ -1270,7 +1290,7 @@
     <!--end header-->
     <!-- start coding for mobile menu  -->
     <div
-      class="mobile--menu invisible absolute top-20 z-50 w-full translate-y-20 bg-brand-gray-light-100 pt-4 opacity-0 transition-all duration-200 ease-in lg:hidden"
+      class="mobile--menu invisible fixed  top-20 z-50 w-full translate-y-20 bg-brand-gray-light-100 pt-4 opacity-0 transition-all duration-200 ease-in lg:hidden"
     >
       <div class="mb-3 bg-white">
         <ul>
@@ -2237,8 +2257,8 @@
             <div class="flex justify-center">
               <div class="w-[733px] max-w-full">
                 <ul class="flex">
-                  <li
-                    class="nav-step relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
+                  <li data-type="information"
+                    class="nav-step cursor-pointer relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
                   >
                     <div
                       class="marker: h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
@@ -2249,8 +2269,8 @@
                       Information
                     </p>
                   </li>
-                  <li
-                    class="nav-step relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
+                  <li data-type="shipping"
+                    class="nav-step cursor-pointer relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
                   >
                     <div
                       class="h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
@@ -2261,8 +2281,8 @@
                       Shipping
                     </p>
                   </li>
-                  <li
-                    class="nav-step group relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
+                  <li data-type="payment"
+                    class="nav-step cursor-pointer group relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
                   >
                     <div
                       class="h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
@@ -2273,8 +2293,8 @@
                       Payment
                     </p>
                   </li>
-                  <li
-                    class="nav-step group relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
+                  <li data-type="thank"
+                    class="nav-step cursor-pointer group relative flex w-64 max-w-full flex-col items-center gap-2 after:absolute after:top-2.5 after:-right-5 after:h-[1px] after:w-[26px] after:bg-brand-gray-light-900 last:after:content-none"
                   >
                     <div
                       class="h-[16px] w-[16px] rounded-full border border-brand-gray-light-900 md:h-[18px] md:w-[18px]"
@@ -2759,7 +2779,7 @@
                               <label
                                 for="credit_card"
                                 class="text-brand-dark-blue"
-                                >Credit Card</label
+                                >Paypal Express</label
                               >
                             </div>
                             <div class="flex items-center gap-3">
@@ -2795,11 +2815,11 @@
                             <input
                               type="radio"
                               checked
-                              id="credit_card"
-                              name="card"
+                              id="same-as"
+                              name="same"
                             />
                             <label
-                              for="credit_card"
+                              for="same-as"
                               class="text-brand-dark-blue"
                               >Same as shipping address</label
                             >
@@ -2834,8 +2854,8 @@
                         <label
                           for="nails"
                           class="select-none pl-2 text-sm text-brand-dark-blue transition-all duration-200 before:absolute before:top-[4px] before:left-0 before:inline-block before:h-[16px] before:w-[16px] before:cursor-pointer before:border before:border-brand-gray-light-200 before:bg-white peer-checked:after:absolute peer-checked:after:top-[8px] peer-checked:after:left-[4px] peer-checked:after:h-[12px] peer-checked:after:w-[12px] peer-checked:after:bg-[url(../images/check.svg)] peer-checked:after:bg-no-repeat"
-                          >I have read and agree to the website Terms and
-                          Conditions
+                          >I have read and agree to the website <a href="#" class="underline">Terms and
+                          Conditions</a>
                           <span class="text-brand-pink">*</span></label
                         >
                       </div>
@@ -3286,7 +3306,7 @@
         </section>
       </main>
       <!-- start coding for footer area  -->
-      <footer
+       <footer
         class="d-gray-100 border-t-8 border-brand-pink bg-brand-dark-blue pb-24 pt-20 lg:py-20"
       >
         <div class="container mx-auto">
@@ -3384,35 +3404,35 @@
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >About Us</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Contact us</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Partnership</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Careers</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Store Locator</a
                   >
                 </li>
@@ -3426,35 +3446,35 @@
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Shipping</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Return & refund policy</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Terms & Conditions</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-white transition-all hover:font-medium hover:text-brand-pink"
+                    class="text-white transition-all hover:text-brand-pink"
                     >Help Centre</a
                   >
                 </li>
@@ -3487,7 +3507,7 @@
                 <div class="flex items-center gap-8 pt-5">
                   <a href="#" target="_blank">
                     <svg
-                      class="fill-brand-pink transition-all hover:fill-brand-pink-dark"
+                      class="fill-brand-pink transition-all hover:fill-white"
                       width="12"
                       height="26"
                       viewBox="0 0 12 26"
@@ -3501,7 +3521,7 @@
                   </a>
                   <a href="#" target="_blank">
                     <svg
-                      class="fill-brand-pink transition-all hover:fill-brand-pink-dark"
+                      class="fill-brand-pink transition-all hover:fill-white"
                       width="26"
                       height="26"
                       viewBox="0 0 26 26"
@@ -3515,7 +3535,7 @@
                   </a>
                   <a href="#" target="_blank">
                     <svg
-                      class="fill-brand-pink transition-all hover:fill-brand-pink-dark"
+                      class="fill-brand-pink transition-all hover:fill-white"
                       width="26"
                       height="26"
                       viewBox="0 0 26 26"
@@ -3586,11 +3606,7 @@
       </footer>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/intlTelInput-jquery.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      $(".telephone").intlTelInput({ initialCountry: "sa" });
-    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script> 
+    <script src="js/custom.js"></script> 
   </body>
 </html>

@@ -9,6 +9,36 @@ $(function () {
     $(".mobile--menu").toggleClass("translate-y-20 opacity-0 invisible");
     $(".main-overlay").toggleClass("after:opacity-0 after:invisible");
   });
+
+  // for phone select flag and country
+
+  $(document).on("click", ".click-select-phone", function () {
+    $(this).toggleClass("group");
+    $(this)
+      .parents(".phone-select-area")
+      .find(".phone-menu")
+      .toggleClass("translate-y-10 opacity-0 invisible"); 
+  });
+
+  $(document).on("click", ".phone-menu li", function () {
+    let flug = $(this).data("flug");
+    let code = $(this).data("code");
+       $(this)
+         .parents(".phone-select-area")
+         .find(".click-select-phone")
+         .find("#flug")
+         .attr("src", flug);
+         $(this)
+           .parents(".phone-select-area") 
+           .find("#telephone")
+           .attr("placeholder", code);
+
+    $(this).parent().addClass("translate-y-10 opacity-0 invisible");
+      $(this)
+        .parents(".phone-select-area")
+        .find(".click-select-phone")
+        .removeClass("group");
+  });
   // start coding for header menu
   $(document).on("click", ".dropdown-menu", function () {
     $(".show-menu").addClass("translate-y-20 opacity-0 invisible");
@@ -278,8 +308,7 @@ $(function () {
     $(".nav-step:nth-child(1)").addClass("active");
 
     $(".button__area button").click(function () {
-      var id = $(this).attr("data-id");
-      console.log(id);
+      var id = $(this).attr("data-id"); 
       if (id == "next") {
         if (child <= length) {
           child++;
@@ -289,7 +318,31 @@ $(function () {
           child--;
         }
       }
+      current(child);
+    });
 
+    //step nav
+    $(".nav-step").click(function () { 
+      let type = $(this).data("type"); 
+      switch (type) {
+        case "information":
+          child = 1;
+          break;
+        case "shipping":
+          child = 2;
+          break;
+        case "payment":
+          child = 3;
+          break;
+        case "thank":
+          child = 4;
+          break;
+      }
+       current(child);
+     });
+
+
+    function current(child) {
       var currentSection = $(".step:nth-of-type(" + child + ")");
       var navsection = $(".nav-step:nth-of-type(" + child + ")").addClass(
         "active"
@@ -297,7 +350,8 @@ $(function () {
       currentSection.fadeIn();
       $(".step").not(currentSection).hide();
       $(".nav-step").not(navsection).removeClass("active");
-    });
+    }
+
   }
   step();
 
