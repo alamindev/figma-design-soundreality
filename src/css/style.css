@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+
 /*
 ! tailwindcss v3.1.3 | MIT License | https://tailwindcss.com
 */
@@ -1157,6 +1159,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   height: 2.5rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-4{
   height: 1rem;
 }
@@ -1221,12 +1227,8 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   height: 16px;
 }
 
-.h-\[174px\]{
-  height: 174px;
-}
-
-.h-6{
-  height: 1.5rem;
+.max-h-48{
+  max-height: 12rem;
 }
 
 .max-h-\[48vh\]{
@@ -1245,12 +1247,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   max-height: calc(100vh - 160px);
 }
 
-.max-h-40{
-  max-height: 10rem;
+.max-h-screen{
+  max-height: 100vh;
 }
 
-.max-h-48{
-  max-height: 12rem;
+.max-h-\[calc\(100vh-150px\)\]{
+  max-height: calc(100vh - 150px);
 }
 
 .w-full{
@@ -1457,10 +1459,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   width: 258px;
 }
 
-.w-\[120px\]{
-  width: 120px;
-}
-
 .min-w-full{
   min-width: 100%;
 }
@@ -1490,6 +1488,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-10{
+  --tw-translate-y: 2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-\[100\%\]{
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1502,11 +1505,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .translate-y-\[-50\%\]{
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-10{
-  --tw-translate-y: 2.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1554,10 +1552,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .grid-cols-12{
   grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1720,12 +1714,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-radius: 0.25rem;
 }
 
-.rounded-none{
-  border-radius: 0px;
-}
-
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-none{
+  border-radius: 0px;
 }
 
 .border{
@@ -1759,16 +1753,16 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-bottom-width: 8px;
 }
 
+.border-r{
+  border-right-width: 1px;
+}
+
 .border-t-8{
   border-top-width: 8px;
 }
 
 .border-t{
   border-top-width: 1px;
-}
-
-.border-r{
-  border-right-width: 1px;
 }
 
 .border-none{
@@ -1788,6 +1782,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 .border-brand-gray-light-100{
   --tw-border-opacity: 1;
   border-color: rgb(249 249 249 / var(--tw-border-opacity));
+}
+
+.border-brand-gray-light{
+  --tw-border-opacity: 1;
+  border-color: rgb(243 243 243 / var(--tw-border-opacity));
 }
 
 .border-brand-gray-light-700{
@@ -1824,11 +1823,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-color: rgb(170 132 83 / var(--tw-border-opacity));
 }
 
-.border-brand-gray-light{
-  --tw-border-opacity: 1;
-  border-color: rgb(243 243 243 / var(--tw-border-opacity));
-}
-
 .bg-brand-gray{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -1849,6 +1843,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
+.bg-transparent{
+  background-color: transparent;
+}
+
 .bg-brand-dark-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(53 54 83 / var(--tw-bg-opacity));
@@ -1857,10 +1855,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 .bg-brand-pink{
   --tw-bg-opacity: 1;
   background-color: rgb(242 48 95 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .bg-brand-gray-50{
@@ -1983,18 +1977,13 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   stroke-width: 2px;
 }
 
-.stroke-\[1\.5px\]{
-  stroke-width: 1.5px;
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.object-right-top{
-  -o-object-position: right top;
-     object-position: right top;
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-4{
@@ -2003,10 +1992,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .p-3{
   padding: 0.75rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .p-2\.5{
@@ -2153,6 +2138,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   padding-right: 1.5rem;
 }
 
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .pt-8{
   padding-top: 2rem;
 }
@@ -2195,6 +2185,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
 }
 
 .pb-1\.5{
@@ -2329,12 +2323,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   padding-right: 0.5rem;
 }
 
-.pl-5{
-  padding-left: 1.25rem;
+.pb-20{
+  padding-bottom: 5rem;
 }
 
-.pl-8{
-  padding-left: 2rem;
+.pb-28{
+  padding-bottom: 7rem;
 }
 
 .text-left{
@@ -2361,6 +2355,10 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
 }
 
 .text-xs{
@@ -2397,10 +2395,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .text-\[28px\]{
   font-size: 28px;
-}
-
-.text-\[10px\]{
-  font-size: 10px;
 }
 
 .font-bold{
@@ -2461,6 +2455,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
+.text-brand-gray-light-200{
+  --tw-text-opacity: 1;
+  color: rgb(221 221 221 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2489,11 +2488,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 .text-brand-brown{
   --tw-text-opacity: 1;
   color: rgb(170 132 83 / var(--tw-text-opacity));
-}
-
-.text-brand-gray-light-200{
-  --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2610,11 +2604,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   border-right-width: 0px !important;
 }
 
-.slick--tag .slick-slide:first-child a{
+.slick--tag.light .slick-slide:first-child a{
   padding-left: 0px !important;
 }
 
-.slick--tag .slick-slide:last-child a{
+.slick--tag.light .slick-slide:last-child a{
   padding-right: 0px !important;
 }
 
@@ -2632,6 +2626,15 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .showcase .slick-slide:last-child .item{
   padding-right: 0px !important;
+}
+
+.dropdown-menu.cart rect{
+  fill: #353653 !important;
+}
+
+.current .change-text{
+  --tw-text-opacity: 1;
+  color: rgb(242 48 95 / var(--tw-text-opacity));
 }
 
 .product-info .slick-slide ,
@@ -2721,9 +2724,68 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   color: rgb(242 48 95 / var(--tw-text-opacity));
 }
 
+.helpfull .svg-nonhover{
+  display: none !important;
+}
+
+.helpfull .svg-hover{
+  display: block !important;
+}
+
 .jq-star-svg {
   width: 18px;
   height: 18px;
+}
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005" !important;
+  border: 0;
+  position: static !important;
+  width:  auto !important;
+  height: auto !important
+}
+
+.rating > input:not(:checked) + label::after,
+ .rating > input:checked + label::after{
+  position: static !important;
+  background: transparent;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+  width: 22px
+}
+
+.rating > input:checked + label, .rating > input:not(:checked) + label {
+  padding-left: 0;
+  line-height: 0;
+}
+
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover,  
+.rating:not(:checked) > label:hover ~ label {
+  color: #F2305F;
+}
+
+.rating > input:checked + label:hover,  
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label {
+  color: #F2305F;
 }
 
 .placeholder\:text-brand-gray-light-900::-moz-placeholder{
@@ -2854,6 +2916,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 .after\:top-1::after{
   content: var(--tw-content);
   top: 0.25rem;
+}
+
+.after\:z-40::after{
+  content: var(--tw-content);
+  z-index: 40;
 }
 
 .after\:h-full::after{
@@ -3002,20 +3069,12 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   --tw-bg-opacity: 0.8;
 }
 
-.hover\:fill-brand-pink-dark:hover{
-  fill: #D02A52;
-}
-
-.hover\:fill-brand-brown-light:hover{
-  fill: #9A7545;
-}
-
 .hover\:fill-white:hover{
   fill: #fff;
 }
 
-.hover\:font-medium:hover{
-  font-weight: 500;
+.hover\:fill-brand-brown-light:hover{
+  fill: #9A7545;
 }
 
 .hover\:text-white:hover{
@@ -3093,6 +3152,14 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   visibility: visible;
 }
 
+.group:hover .group-hover\:block{
+  display: block;
+}
+
+.group:hover .group-hover\:hidden{
+  display: none;
+}
+
 .group:hover .group-hover\:border-brand-pink{
   --tw-border-opacity: 1;
   border-color: rgb(242 48 95 / var(--tw-border-opacity));
@@ -3141,6 +3208,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:text-brand-pink{
   --tw-text-opacity: 1;
   color: rgb(242 48 95 / var(--tw-text-opacity));
@@ -3148,16 +3220,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
-}
-
-.group:hover .group-hover\:brightness-50{
-  --tw-brightness: brightness(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.group:hover .group-hover\:brightness-100{
-  --tw-brightness: brightness(1);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .peer:checked ~ .peer-checked\:border-brand-pink{
@@ -3453,6 +3515,11 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     padding-bottom: 5rem;
   }
 
+  .md\:px-\[25px\]{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .md\:pb-14{
     padding-bottom: 3.5rem;
   }
@@ -3514,10 +3581,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 @media (min-width: 1024px){
   .lg\:static{
     position: static;
-  }
-
-  .lg\:right-5{
-    right: 1.25rem;
   }
 
   .lg\:block{
@@ -3674,10 +3737,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
     font-size: 62px;
   }
 
-  .lg\:text-\[22px\]{
-    font-size: 22px;
-  }
-
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -3693,10 +3752,6 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
 }
 
 @media (min-width: 1280px){
-  .xl\:h-auto{
-    height: auto;
-  }
-
   .xl\:w-\[294px\]{
     width: 294px;
   }
@@ -3786,7 +3841,5 @@ button:focus,  input:focus,  textarea:focus,  select:focus{
   .xl\:pl-0{
     padding-left: 0px;
   }
-}
- 
-
+} 
   

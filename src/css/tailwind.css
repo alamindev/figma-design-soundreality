@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-
+@import url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -59,10 +59,10 @@
    .dark .slick-slide{
     @apply !border-r-0
    }
-  .slick--tag .slick-slide:first-child a{
+  .slick--tag.light .slick-slide:first-child a{
     @apply !pl-0
   }
-  .slick--tag .slick-slide:last-child a{
+  .slick--tag.light .slick-slide:last-child a{
     @apply !pr-0
   }
   .showcase .slick-slide{
@@ -76,6 +76,13 @@
   }
   .showcase .slick-slide:last-child .item{
         @apply !pr-0
+  }
+  .dropdown-menu.cart rect{
+    @apply !fill-brand-dark-blue
+  }
+
+  .current .change-text {
+    @apply text-brand-pink
   }
 
   
@@ -129,6 +136,12 @@
   .active-row td{
     @apply border-brand-pink text-brand-pink border-y
   }
+  .helpfull .svg-nonhover{
+    @apply !hidden
+  }
+  .helpfull .svg-hover{
+    @apply !block
+  }
 }
  
 .jq-star-svg {
@@ -136,5 +149,45 @@
 	height: 18px;
 }
  
+.rating { 
+  border: none;
+  float: left;
+}
 
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005" !important;
+  border: 0;
+  position: static !important;
+  width:  auto !important;
+  height: auto !important
+}
+ .rating > input:not(:checked) + label::after,
+ .rating > input:checked + label::after{
+   position: static !important;
+   background: transparent;
+ }
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+ width: 22px
+}  
+.rating > input:checked + label, .rating > input:not(:checked) + label { 
+	padding-left: 0;  
+  line-height: 0;
+} 
+ 
+
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover,  
+.rating:not(:checked) > label:hover ~ label { color: #F2305F;  }  
+
+.rating > input:checked + label:hover,  
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #F2305F;  } 
   

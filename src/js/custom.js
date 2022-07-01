@@ -242,17 +242,22 @@ $(function () {
       var val = $(this).val();
       $(".option-value").html(val);
       if (val == "100ml" || val == "50ml") {
+        
         $(".empty-stock").show();
+        $(".empty-stock").addClass("current");
         $(".empty-stock-notify").hide();
         $(".select-option-btn").hide();
         $(".tab-select-option").show();
         $(".add-to-cart").show();
       } else if (val == "40ml") {
         $(".empty-stock").hide();
+        $(".empty-stock").addClass("current");
         $(".empty-stock-notify").show();
         $(".select-option-btn").hide();
         $(".add-to-cart").hide();
         $(".tab-select-option").hide();
+      } else {
+        $(".empty-stock").removeClass("current");
       }
     }
   });
@@ -264,10 +269,14 @@ $(function () {
       "display",
       "none"
     );
+    $(".accordion-item:last-child .accordion-content").css(
+      "display",
+      "block"
+    );
     $(".accordion-item:first-child .js-accordion-title").addClass("open");
+    $(".accordion-item:last-child .js-accordion-title").addClass("open");
 
-    $(".js-accordion-title").click(function () {
-      $(".open").not(this).removeClass("open").next().slideUp(300);
+    $(".js-accordion-title").click(function () { 
       $(this).toggleClass("open").next().slideToggle(300);
     });
   }
@@ -422,7 +431,7 @@ $(function () {
   // start coding for help btn active  
    $(document).on("click", ".helpfull-btn", function (e) {
      e.stopPropagation();
-     $(this).find("svg").toggleClass("!stroke-brand-pink !fill-brand-pink"); 
+     $(this).toggleClass("helpfull"); 
      var incrementVal = $(this).find(".increment").text(); 
       var value = parseInt(incrementVal, 10);
       value = isNaN(value) ? "0" : value; 
@@ -449,7 +458,7 @@ $(function () {
 
        // Display active tab
        let currentTab = $(this).attr("data-id");
-       $(".tabs-content div").hide();
+       $(".tabs-content > div").hide();
        $('#'+currentTab).show();
 
        return false;
